@@ -1,0 +1,7975 @@
+{
+  "meta": {
+    "dataset": "RWF-2000",
+    "seed": 42,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "label_map": {
+      "fight": 1,
+      "nonFight": 0
+    }
+  },
+  "train": [
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\wk5WCCti_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1MVS2QPWbHc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\I-QiUMPTWNE_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\fGyFpyjd_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\iTs901V6_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\e5Dmmply_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\oDGm-DOOyI4_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\bQHNsRpQOIE_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kMI2JME3Aag_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Wby1vUy8aYI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ep1_I0f-u7g_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\H_VQJU0Bqpc_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\JECBfnp2ZXc_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cErr6pCN_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\SaIUKN4N_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\wetyh_1223.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_6.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ep1_I0f-u7g_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\0lHQ2f0d_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HW48LUZKOL4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\nNUeqFgG_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\xDjgfhGt-YA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\ar5ns2zW4lY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\fsVC-FnnklU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\nNUeqFgG_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\bW2vHhYbzHM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\wKMXI2vp_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\z1WyVUv8_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\8SmT9rE9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\egQvmVL2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\v4dhdnsxiX4_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\SCnBiAteLVI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\eUtGwBik_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\YQkE7oOf_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\zOqs7Oh9oDM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\9U8J4abJGDg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\wetyh_1208.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\4yTlGiDoxBo_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\nVdn1krnTCQ_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\B6DO4tXb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\AkTZX27QhjE_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\0Ow4cotKOuw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\1A3zEkCHBl8_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\xtA4owfr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\CfPgoKqk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\mbW7VkAf6Yk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\XQR0CvyY_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uXf4C-YwbtM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\X6V5o-uCYF4_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\GVdnjHyU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\b9I5dDvH_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\QaIY5Au8yOc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H1AzC-GyKto_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NxtwlqSnLbY_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6TDF_12.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_10.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cWJ92fkhME4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HG8xQFSd_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oAeudqZD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\TKBcD3J9Cc8_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\SCnBiAteLVI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\z1WyVUv8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\sHa6YZW9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\hgMpDK55_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\cy1gi3ZJb_c_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\yQWmI4e8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\a7gBQaAFEtw_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\i4OubIZo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1Kbw1bUw_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6Dej3-k3MRE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\o9sRXy5r_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aIg9Yb0O7Hg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Kx5lWLPZ0Y0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\48J5lk4QcpE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\R1A_AxUKosk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\mwuiYEBdkJs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\7gLKFV5voOg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\DRlOjUNi_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_fPfNbHM16M_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Assault011_x264_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\SDFDSSDF_972.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6mrIIcAQ2fI_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\itstEXVr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\rfthfd_536.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\wMcODEtzJIA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4RqDG4I4iAk_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4HH7yMU8y9A_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\oDGm-DOOyI4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gR4OsEPl894_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\8SWZq5we_fk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\fwEk96k8g_I_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1tU4kxa51vw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aKgSasWRJ2s_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\aKgSasWRJ2s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ytjGIK9m_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ZVPU5c95_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\eF5S8iGLAm4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\V726w0IKCp4_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\bqZo64e6_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\bW2vHhYbzHM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dOo2X5wR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Assault005_x264_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\OdxnpEnn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Assault010_x264_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\a39igxDY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kLHNW0uRutY_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\FB3eqRE8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\V89iCOJ1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\OFwYyouR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oByKgGBL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\WHNtrI7MEUg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\YYCGcBuE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3Edebh8P_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\qaAclucigpY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Zy04T0RF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PFw7SeFOD04_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\7-e3_UW7L7U_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\aKK0B4kpKZA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\NvYo6CS_i_A_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\tivF4CAg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\UWmcbEyn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\F7W6PQ3V3y8_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ar5ns2zW4lY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kB9NYpu1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\g8SVNUCm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\qFfqTQm0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\fwEk96k8g_I_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\TuWan04E3gQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\s83GiLts_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\BOt8ZMpM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\u2Lkzfb0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RTHTRS_698.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0H2s9UJcNJ0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\o9sRXy5r_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HVSv9sgz2ZI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\mRqg-WXiR7Q_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\p1bUxYeJ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kExp3yhspR0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UuMYxOYm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RFAA8QO7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\sadffg_950.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H1AzC-GyKto_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\gnBmOf7v_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\mwuiYEBdkJs_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\AEGjLggu_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\videoplayback (2)_66.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\rYE6iUUF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ATDMY6PzK9U_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\nVdn1krnTCQ_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\tgkbh2d9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\tf_X7GtOGyE_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1DwRGRND_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\EFv961C5RgY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HYkbCvPj_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Yw7Ip3VS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RR23nrP0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NxtwlqSnLbY_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\bdZ7ubago6I_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\u-29uYuR2cg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jmZqmYnH_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\u2Lkzfb0_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\xrlCdUaagHY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\BpargJW29Wo_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\XM0NI7ZmwWM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\YC51sSdT_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\FXC43fACfPc_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Qj3oZsaqNGE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1060314\u2564\u00e4\u0393\u00f2\u00f2\u2568\u255c\u2564\u00e0\u2568\u2502\u2568\u2593\u2564\u00e0\u2568\u2524\u2568\u2563\u2564\u00e5\u2568\u2310\u2568\u00bb\u2564\u00eb\u2568\u00fb\u2568\u2557\u2564\u00eb\u2568\u2310\u2568\u2593\u2564\u00e5\u2568\u00c9\u2568\u2561\u2564\u00ea\u2568\u2555\u0393\u00f2\u00e6\u2564\u00e0\u2568\u255b\u2568\u2524\u2564\u00e5\u2568\u00ac\u0393\u00f6\u00f1\u2564\u00e0\u2568\u00dc\u2568\u00bd\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00ff\u2564\u00e0\u2568\u00a5\u2568\u00ab\u2564\u00eb\u2568\u00f9\u2568\u00ed\u2564\u00e0\u0393\u00f6\u00e9\u0393\u00fb\u00e6\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00d6_17.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\YL1qlr23_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\fwEk96k8g_I_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Wq0BuA8GM84_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3pRrZ9TS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\u2Lkzfb0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Ou8ssKOQzI0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\C4SQF-UZzkA_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mbW7VkAf6Yk_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\8pKKdS7rhXo_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\ojZVUz7i_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\H68yvSdp_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\u1r8f71c_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\ZnRk8nWJ548_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\nuf-d5GugL0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\TSHiCcMS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0H2s9UJcNJ0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9F6pZn73_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1O4KGHbRt3M_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\truutrdf_1086.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Yf55ftZR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\DL2gWMZA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3kpviz7lAMY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\4jZvTj4j_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_6-B11R9FJM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PJDdPv2b9-s_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\RTDSFDSA_673.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\8PuNOqvh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\on2HIPgB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\OakN3f1N_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\5ieZt2nc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Fighting014_x264_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\trhfd_1018.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_7.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mRqg-WXiR7Q_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\I-x0G5pAan0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\1MVS2QPWbHc_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HVSv9sgz2ZI_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\yFaADLZw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\rJbh1niy_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1048.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_6.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\VTOPSZvF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\g-qjkePEXQA_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\YDOJvzChqSg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\QRJFLxqK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\jpYrguiW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1049.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\POGFN_430.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HodGUj8s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\9kly-mpQczg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\QUGT4a6qcJs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jgjAKGZW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\PL8idmS7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TuWan04E3gQ_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\qaAclucigpY_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\sadsa_956.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\iP6yS_OroMk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cJvLTWGs-SE_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\as4zD6d86q0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\OTVE3eLAuUM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\1MVS2QPWbHc_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RYFG_778.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\1O4KGHbRt3M_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\0Ow4cotKOuw_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\wyLoweAn_9Q_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\La9lzohO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_8.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\NoUdd8wq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\x7iljhbM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\c1bRFt0x_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\TuWan04E3gQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Y-TiUAODEYw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\KQTiHlA11fM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\rp9hJAQE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\rfthfd_534.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\uKFI67bUzfg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\9kly-mpQczg_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Suv_mMs8J9g_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\-1l5631l3fg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\88ndrvAZpE8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1dsLuL5Lvbc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\b6XfVAZC9Zs_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Fds7C6sp_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\9ErNHIovPDI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3OKArbzg1uc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_6-B11R9FJM_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0NWz-01A2yk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\NYvOWjLU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\XwiwESMn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oVMhWJIpHnc_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\XPG8GqrH_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\IynvwHe9W3U_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\s-jW4cyavW0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\trhfd_1016.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\E9SvEiNt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1113.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QaIY5Au8yOc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0QSeuqzpcOQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\g6jdqkcdgqk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cy1gi3ZJb_c_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\a2qLzOu_n0s_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Xhh2ONc7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cLsPLNQn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Pe1uIhp4dAQ_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jTbvVbkUaPM_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\ngv36FBY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tILABXoHE7s_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\AkTZX27QhjE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Cce4ogHp_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\videoplayback (1)_55.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\E0Huf4Qi0JE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\sadsa_959.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Q1ycSrzoM2c_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\vJDAaUzYOi8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\FKl98mfo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\C3cT1JGv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\1AURh0Wj_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\NQpYodM6_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\32wXo9Dt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Ri_poPbOu-k_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oIEZ45OCmAw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\6doZoiaG9PM_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u0393\u00f2\u00fa\u0393\u00f6\u00c9\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00bc\u2564\u00e7\u2568\u00bc\u2568\u00e6\u2564\u00e5\u0393\u00fb\u00c6\u2568\u00d1\u2564\u00e0\u2568\u2524\u0393\u00f6\u00f1\u2564\u00e0\u0393\u00f2\u00f2\u2568\u00c6\u2564\u00e5\u0393\u00f2\u00a3\u2568\u255b\u2564\u00eb\u2568\u00bf\u0393\u00f6\u00e9\u2564\u00e0\u2568\u00a3\u0393\u00f2\u00e6\u2564\u00eb\u2568\u00fa\u2568\u00bc\u2564\u00e7\u2568\u00bd\u2568\u00c6\u2564\u00eb\u2568\u00d1\u2568\u00f9\u2564\u00e5\u0393\u00fb\u00f4\u0393\u00f6\u00e9\u2564\u00eb\u2568\u2310\u2568\u00f9\u2564\u00e5\u2568\u00a1\u2568\u00ed\u2564\u00e5\u2568\u00ac\u0393\u00f6\u00f1\u2564\u00e0\u2568\u00dc\u2568\u00bd\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00ea\u2568\u2556\u2568\u00fb\u2564\u00eb\u2568\u2593\u2568\u00ed2_urlgot_141.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\tILABXoHE7s_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\a2qLzOu_n0s_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Am9mUxPTvK4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\rSGIFH7n_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cPeNUm31_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NmNKzttk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\HgwpC5Xx_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RETYTDF_523.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\7qtRgyFsk3s_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dDNWfVPw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\sIbVwIO0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\a7D2i0HTXGM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0TFi8D8IBg4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Q876qiBJYfA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\g3QdfSDk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\jOZLjdSi_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\etyiEs3j8x8_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\5CwYc67y_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\4p2iGvo8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\gJDvtfRrM7k_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\SDFDSSDF_977.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kMI2JME3Aag_3.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\GXvqyqYi_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\cWJ92fkhME4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\PFw7SeFOD04_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\OvDMIkTb4XU_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\rSumd9HEmrA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\CqJB8ZWLZ-o_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GuLMP_IOrR0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\v4dhdnsxiX4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\tSk5CEXB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\MxkTo5F-nvU_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\b6XfVAZC9Zs_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\reg_495.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JxpNuQop_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ZVPU5c95_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gR4OsEPl894_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\wgdTpJTo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4HH7yMU8y9A_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\EtRfZ2KP_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\WPK4WLlc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PTy2vx8Ejas_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Assault005_x264_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\dPV9BZrq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\LLo_TXIz5-g_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\V726w0IKCp4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bqZo64e6_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\H_VQJU0Bqpc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\6Rl7q_kXYbg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3qsou7p57Nk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3z7ncTuu_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\MzcX84QCuE8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\v8cACThQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\HtbVjsRA_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\aQysMqg0K7M_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\cBNVcBk3rjg_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\K_7hT4N2QCE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oW8ySS0rN4Y_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\H1AzC-GyKto_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\nBO2Wlr3LhU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\dKqbUbuRxB4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\NWIc3Yat_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0GGPb4iO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\d3WwO8eM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\w6VytllR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dOM7frJMFbc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\kMI2JME3Aag_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\a2qLzOu_n0s_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\uNtsEcFR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\wNTaSOXj_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\skycjZcE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fwEk96k8g_I_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\SCnBiAteLVI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\AszvEN7z_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3kpviz7lAMY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1104.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\SJRnWfHAx_E_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\kOp57sQKMPY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\LbYQs9oA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Assault009_x264_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\SXd2yu2LHv0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\az7WDDFT_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\WW8zIoiZ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\SDFDSSDF_976.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\JwTPruSFTjk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\6doZoiaG9PM_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\aQysMqg0K7M_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Y-TiUAODEYw_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\sYGIUeBX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\6n48sGUq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kExp3yhspR0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\iquSbj5Wqj0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\hrBh5x_3hW0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\as4zD6d86q0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HVRUChVh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\CKzrrb7E_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\hytjfg_354.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\C7sNO3e2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\iki0PAvq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Q1ycSrzoM2c_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\i5xJxtv4gXs_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\K4700BuM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\VtIQbKvy_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Ri_poPbOu-k_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\wxdRVAZk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\JPIeYvRgo6I_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\OU7AM5fv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\V726w0IKCp4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jTbvVbkUaPM_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\MxkTo5F-nvU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_11.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\xV69l7Vj_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\uXf4C-YwbtM_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3Vw7MoNBgx4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\zZHTBiER_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\YDOJvzChqSg_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\eNoGYdL1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dxzvtJ4gPC0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3Vw7MoNBgx4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ThiaJUQ8_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\-1l5631l3fg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\8pKKdS7rhXo_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jXrwQsZJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3CQi0ZCCHvc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\wXHEbfck_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ksdkojifes_416.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\R1A_AxUKosk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\yKxTC4lT_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Wq0BuA8GM84_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\FSaZ8wiFw8Q_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oqCIUYdq_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\TKBcD3J9Cc8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\i2sLegg2JPA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\arXD3QM2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bqZo64e6_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\y2pGPMqikJg_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\j83up7ni_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\g6jdqkcdgqk_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QkqaGJ9x_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\bpbiA2sr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\zOqs7Oh9oDM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Fwhi4UNI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\kApoSGPK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kMI2JME3Aag_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\trhfd_1019.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\S5dmvVF4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Xmmy8LvV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\yDKfgkb2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dt8YUGoOSgQ_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\umOs1WLBkuo_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RVV3lolZ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\wetyh_1204.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6Dej3-k3MRE_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Ma1iva6R_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tIvvuvuJFYc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\SCnBiAteLVI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oDWNiATJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4yTlGiDoxBo_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\aKgSasWRJ2s_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\MwZvUQRO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\mwuiYEBdkJs_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\dfsafsghg_326.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1040.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0_DzLlklZa0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\BpargJW29Wo_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3SS0E4SmTk8_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\vXvv1gqd_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\K_7hT4N2QCE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cHsy9xWM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\oowA6LToeTE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\xKq3hlefCUI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\VXLdrn0b_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0_DzLlklZa0_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fvtpgsrF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\gHcG_c1i4uE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3SS0E4SmTk8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nVdn1krnTCQ_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\OAfV0xPIhZw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HW48LUZKOL4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u2568\u2562\u2568\u00c6\u2564\u00e5\u2568\u00ab\u2568\u00bc\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a5\u2564\u00e5\u2568\u00bf\u2568\u2510\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556,\u2564\u00ea\u0393\u00fb\u00e6\u2568\u00e6\u2564\u00e4\u0393\u00f2\u00a5\u2568\u00ac\u2564\u00e7\u2568\u00bd\u0393\u00f2\u00f2\u2564\u00e4\u0393\u00f6\u00c9\u2568\u2592\u2564\u00e0\u0393\u00fb\u00e6\u2568\u0192\u2564\u00e4\u0393\u00f2\u00a5\u2568\u2310\u2564\u00e4\u0393\u00f2\u00f2\u0393\u00f2\u00e6\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00fb\u2564\u00e5\u2568\u00d6\u2568\u00fa\u2564\u00e5\u2568\u00ab\u0393\u00f2\u00f3\u2564\u00e7\u2568\u00bd\u0393\u00f6\u00f1\u2564\u00e5\u2568\u20a7\u2568\u2561\u2564\u00e4\u0393\u00f2\u00f9\u2568\u20a7\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a3\u2564\u00e5\u2568\u2561\u0393\u00f2\u00a5\u2564\u00ea\u0393\u00f2\u00fb\u0393\u00f6\u00e9\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00e0\u2568\u20a7\u0393\u00f2\u00f9_urlgot_254.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4yTlGiDoxBo_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cy1gi3ZJb_c_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6YmBBzyX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\s-jW4cyavW0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\API3q8TBGu4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\oM-goKOVjeU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\a2qLzOu_n0s_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4yTlGiDoxBo_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Wby1vUy8aYI_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\sadsa_957.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\SNGRni0hBUM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\aGfwZ3E4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\YL-qwpTMjzk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\OAfV0xPIhZw_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\VbwTMJroTbI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\EtRfZ2KP_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\wyLoweAn_9Q_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\VGKvz9qZ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cfOKjx8l_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\DTq6Gu30-uA_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\C8wt47cphU8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\SDFDSSDF_978.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oIEZ45OCmAw_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\iJ5Q1tar_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\qrBAhb8K_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\etyiEs3j8x8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\oIEZ45OCmAw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\18xQQOv5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DHhyNrXr_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JwfajujK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\rfthfd_535.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\C4SQF-UZzkA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\OvDMIkTb4XU_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QkqaGJ9x_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\eifiXLWYul8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\rbByyS4o_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0_DzLlklZa0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\4I1DGWsh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ZPhVyVZt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\truutrdf_1082.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\c7j3qEqO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Assault009_x264_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1ahhhDBQHxg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\wMgaVgMG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\N1Q9v-saJ_g_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6Dej3-k3MRE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_14.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Pe1uIhp4dAQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\s-jW4cyavW0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\2lrARl7utL4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1r91ACCe_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4RgIlSIB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\X0fP5VQMrbg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NpznjZe7A2M_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gR4OsEPl894_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\G0rgy9Ts_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\I3rTHE3L_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1Kbw1bUw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\1W8hsVvyKt4_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\0H2s9UJcNJ0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gJDvtfRrM7k_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\16O0PIQP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\LLo_TXIz5-g_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\q4jlVJRb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1MVS2QPWbHc_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Nlopikk0zhE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\iHUwZBSx_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\wxdRVAZk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\X6V5o-uCYF4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\R1A_AxUKosk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\tIHY2ZFQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\umOs1WLBkuo_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ajJRyYZUEtA_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dOM7frJMFbc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\-1l5631l3fg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\u1r8f71c_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\IynvwHe9W3U_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\T56HlypCEyU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4HH7yMU8y9A_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ndNHBJbS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PTy2vx8Ejas_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\CPGf41PN_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\OCseFRss_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3CQi0ZCCHvc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\e4U3gEDEB58_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\i5xJxtv4gXs_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\nuf-d5GugL0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1MVS2QPWbHc_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\V726w0IKCp4_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0_DzLlklZa0_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\G9uNZGcK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\SGntTioECg4_999.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\mVTcBPrjh-E_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6mrIIcAQ2fI_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\pHiqIppg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\YDOJvzChqSg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\RTDSFDSA_674.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RIXaF_TkLlU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Ile3EVQA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\_wVuRdfDHbE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\WPXtCPPS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\10uSOcwS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\XM0NI7ZmwWM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\FrwBev61_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\iRnSE1TL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3qsou7p57Nk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\2hQMRq06NJs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\o9sRXy5r_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\GtGAcKxn_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\f50PQz7mXds_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\MrEU15Ug_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\JwTPruSFTjk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fHOVzWgX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\EtRfZ2KP_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\rwg8hp5X_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Y4KiQpCP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\pKOUG5AqLpY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0lHQ2f0d_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\bW2vHhYbzHM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\bQHNsRpQOIE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\pKOUG5AqLpY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0_DzLlklZa0_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\OvDMIkTb4XU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\RYFG_774.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3Vw7MoNBgx4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\OTVE3eLAuUM_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\aZxUVVqk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\551_wlV44GU_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3kpviz7lAMY_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\7QgVKRHB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\u1r8f71c_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\8bEO4LGr_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PFw7SeFOD04_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\I-QiUMPTWNE_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\FZDDNtcaBcw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\wMcODEtzJIA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RYFG_776.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HW48LUZKOL4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\r8PX3ZJ1_II_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\V3EI1n_7JwU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RIXaF_TkLlU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\RYFG_781.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\AsGAgf8U2rk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QkqaGJ9x_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jTbvVbkUaPM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TfDHgxDm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Fk3lg4wG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oW8ySS0rN4Y_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\SJRnWfHAx_E_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\nVdn1krnTCQ_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_9.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\OTVE3eLAuUM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Jq8neqBlL2Y_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\KOaUqaC8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\aIg9Yb0O7Hg_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\8SWZq5we_fk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1MVS2QPWbHc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_7.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\uz4dXoN5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\CBfRtxkO1bE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\GhZRf4GIw0w_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\wetyh_1224.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\GKsvH_pVNQU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\20130506 05_58 \u2564\u00ea\u2568\u00ba\u2568\u00a1\u2564\u00e4\u0393\u00f2\u00e6\u0393\u00f2\u00e6 \u2564\u00eb\u0393\u00f2\u00f9\u2568\u00ed\u2564\u00e5\u2568\u00ab\u2568\u00a1_37.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\7qtRgyFsk3s_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\yWnLtCrM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\rn7Qjaj9_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\EFv961C5RgY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_6-B11R9FJM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3SS0E4SmTk8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\EFv961C5RgY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\HW48LUZKOL4_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\niXRLeON_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\PFw7SeFOD04_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\CqJB8ZWLZ-o_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\GL9jSSxg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\TP6mtOzL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\6Dej3-k3MRE_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RTDSFDSA_676.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DTq6Gu30-uA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Ile3EVQA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\gNIohJfdvEc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0H2s9UJcNJ0_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RTHTRS_717.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\7R1m3V8C30g_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\FZDDNtcaBcw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\aoFX2ZCB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NvYo6CS_i_A_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\6doZoiaG9PM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RIXaF_TkLlU_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\6Rl7q_kXYbg_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kOp57sQKMPY_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\mVAv7aB5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9nFtxkJ7ywg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\66U2c3YMjOI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\nNUeqFgG_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\lL3FQltu_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\UIsigi4O-sI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gDeDWPVe_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1QixA5m2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\qaAclucigpY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4yTlGiDoxBo_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0NqPsSHdri8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ug2tQMG8DC0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\VpnCjE1l_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\i5xJxtv4gXs_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\qrWTk-2a13o_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\zOqs7Oh9oDM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\WCbsjDUV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\7LnoFKSl2rs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\IMA4zYs83Lo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\POGFN_432.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jR91oXYV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\POGFN_429.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\IvimSdBV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HAh9eqtO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\b6XfVAZC9Zs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\SJRnWfHAx_E_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mX4cQM1xMFc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Yma07mlW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\YJvuxdWs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\CqJB8ZWLZ-o_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\mbW7VkAf6Yk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\oMZpqizQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\jTbvVbkUaPM_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RETYTDF_524.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\K6WRP2xi_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\GCgD8AkV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\5QqDgtwEQsI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\hP8CJJcx_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\PxhG17WC_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6MSwCc0a_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Ri_poPbOu-k_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\1W8hsVvyKt4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\8s3rES1a_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\qmvilMkD57M_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\uXf4C-YwbtM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\u-VcErKk6Qs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\i5xJxtv4gXs_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\0vasozvJYvk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u2568\u2524\u2568\u2556\u2564\u00eb\u2568\u2310\u2568\u00fb\u2564\u00e7\u2568\u00e1\u2568\u00fb\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e0\u0393\u00f2\u00e6\u2568\u00ba\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e7\u2568\u00f1\u2568\u00bb\u2564\u00e7\u2568\u2591\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00e6\u0393\u00f2\u00e6\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00a3\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00e5\u2568\u00d6\u2568\u00a2\u2564\u00e7\u2568\u00bc\u2568\u00bb\u2564\u00e7\u2568\u00a2\u2568\u2591\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00e6_urlgot_127.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\pU9BTy7h_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\OAfV0xPIhZw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\LLo_TXIz5-g_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\HW48LUZKOL4_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\BpargJW29Wo_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\V726w0IKCp4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\YDOJvzChqSg_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\VfDyc4ORBSI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\8U6x0VMW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RTHTRS_705.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gzrwD4E5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\PNgE-OKjhgU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DC10fyQgNqo_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Kx5lWLPZ0Y0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1054.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\s3gaPKuW_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Xr0T6ylW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NPeKBgURcxI_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Mi4nMB8AHxI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\KLEwMKTN_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PTy2vx8Ejas_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\kMgCk8Ku_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\OAfV0xPIhZw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\LKdiIccO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\FXC43fACfPc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\uKFI67bUzfg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\rfthfd_537.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\t2z75yT2S_M_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Fighting014_x264_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4RqDG4I4iAk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\WXwfibYX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\qnpure5G_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Assault011_x264_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RfqBhe5z_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\rn7Qjaj9_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1XFiS6Lt_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cURNFrn5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\JJG0bHPur50_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3SS0E4SmTk8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\McDxnU7x_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\dNDOYLTf_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\gJDvtfRrM7k_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\wetyh_1207.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0QSeuqzpcOQ_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\oW8ySS0rN4Y_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\NpznjZe7A2M_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\I-QiUMPTWNE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dBkszzm-7mw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Pe1uIhp4dAQ_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\FPU7QpO4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\e7tarNsO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\X3mPJLe9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\muJDFQqbbmA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\nuf-d5GugL0_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0H2s9UJcNJ0_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QkqaGJ9x_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\lI17Q0j3_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\1O4KGHbRt3M_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\OAFsSiyX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\CBfRtxkO1bE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\7R1m3V8C30g_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\z1WyVUv8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\LMNJJere_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\cy1gi3ZJb_c_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\SCnBiAteLVI_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\C76VU1PQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_11.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Jq8neqBlL2Y_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Fn4sSVbO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\48J5lk4QcpE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kOp57sQKMPY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\0lHQ2f0d_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\xRbCHA5YTi8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\0Ow4cotKOuw_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\K6WRP2xi_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1O4KGHbRt3M_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\N1Q9v-saJ_g_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\pLb6Zimq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Ry5c1PbcIa0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\PNoO9WGJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_RziL1Ds6xU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3kpviz7lAMY_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\erwyrhd_339.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\8VqTmuq4HcI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\a2qLzOu_n0s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3CQi0ZCCHvc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1O4KGHbRt3M_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\hWBjrqFS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gEODOSeI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TYsebroPeGY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\nVdn1krnTCQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tIvvuvuJFYc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\14YZVngQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3kpviz7lAMY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\golJWJCak1k_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\XRC_6WgxusI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RTHTRS_697.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\RIXaF_TkLlU_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tIvvuvuJFYc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\1MVS2QPWbHc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\uZLLdl2P_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\kOp57sQKMPY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\8m3onRfr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NPeKBgURcxI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\l4gqDHx9_dI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\1tU4kxa51vw_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fwEk96k8g_I_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Assault006_x264_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gk0v57Xn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\I-x0G5pAan0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\MhiGg6f7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\tf_X7GtOGyE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\xKq3hlefCUI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\48J5lk4QcpE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aKgSasWRJ2s_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oIEZ45OCmAw_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\NvYo6CS_i_A_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\xQSbcaZp_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\C8wt47cphU8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0NWz-01A2yk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\c1PJngmt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uu3SB2L1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\wetyh_1206.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0_DzLlklZa0_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uhTalZ00_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\KxOHVkVQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\g7fqR4gn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Ri_poPbOu-k_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Vd27cYFthms_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\d_93UNyiVM4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oG3Qxvq0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\VF8M3gXp_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\videoplayback_94.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\SGntTioECg4_997.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\f50PQz7mXds_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mX4cQM1xMFc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\as4zD6d86q0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1XFiS6Lt_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\l4gqDHx9_dI_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_4.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\mX4cQM1xMFc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\OTVE3eLAuUM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\9Jss3rP1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tXk2yvmq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HvfhYJ8b_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HW48LUZKOL4_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9uvZbSsy_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1Ytq2moWGdw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\videoplayback (1)_54.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HbfZYAXw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Hsvzcq2l_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\p19HiyCX7EQ_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\xTCvMktQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\UvLAudRA91Y_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Wby1vUy8aYI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RTHTRS_719.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\NPeKBgURcxI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00e5\u2568\u00a2\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00eb\u2568\u2524\u2568\u00e1\u2564\u00e0\u2568\u20a7\u2568\u00f2\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00c9\u2564\u00e7\u0393\u00f2\u00a2\u2568\u2524\u2564\u00e0\u0393\u00fb\u00e6\u2568\u0192\u2564\u00e4\u0393\u00f2\u00a5\u2568\u2310\u2564\u00e5\u2568\u00d6\u2568\u00fa\u2564\u00e5\u2568\u00ab\u0393\u00f2\u00f3\u2564\u00e5\u2568\u00aa\u2568\u00ba\u2564\u00e5\u2568\u255b\u0393\u00f6\u00f1 \u2564\u00ea\u2568\u00c9\u2568\u00e6\u2564\u00e5\u2568\u00a1\u0393\u00f6\u00c9\u2564\u00e7\u2568\u00ab\u2568\u255d\u2564\u00eb\u2568\u00ba\u0393\u00f6\u00f1\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00eb\u2568\u2502\u2568\u2310\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00fb_urlgot_279.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Isob76kh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ug2tQMG8DC0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DZdLP0rd_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\5RayT2Vy0EA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\mwuiYEBdkJs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\SVdz24hD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\p1bUxYeJ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\wY7Om5cW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\xxIkl4Ue_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3OKArbzg1uc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\GzPhV725_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\pqvGKGz7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0YbzxGPE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PFw7SeFOD04_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\fbtEhNq5a6E_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\U1Z1bVRt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\IynvwHe9W3U_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\f50PQz7mXds_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\RQt37bnC_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\7R1m3V8C30g_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\La60qonu_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gSmdNZya_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\IGCZWiP8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RGIpCpdlzI8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\o8sEvktx_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1106.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\p4DwXTNr-xc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\M4syignQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\DrKgJwIv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\KQTiHlA11fM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\AbD9xwut_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\vJDAaUzYOi8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\7R1m3V8C30g_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\T56HlypCEyU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\mwuiYEBdkJs_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oIEZ45OCmAw_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\fK7CSrQ6OpM_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\91TniI0y_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_10.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\NvYo6CS_i_A_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tmm7AxKl_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\mE9Cp4na_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\85dkGMed_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\twBrsDhF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\2bBn7MLg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mX4cQM1xMFc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\oXeSTCLT_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\XQR0CvyY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uEzFjs3X_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\sLOqgf6N_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UvLAudRA91Y_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9C_LQa7nnFg_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Bp3wCVsS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tzdvtHL7Akk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\cpFWuHXF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\a2kw3cfb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HW48LUZKOL4_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\DWEBHWM9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GKsvH_pVNQU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\v4dhdnsxiX4_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\BpargJW29Wo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\utRmPckr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\BpargJW29Wo_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jmZqmYnH_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\H1AzC-GyKto_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\yN11pFfP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\1W8hsVvyKt4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\dP20avzQAf8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GuLMP_IOrR0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\f50PQz7mXds_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kLHNW0uRutY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\AF4Rk1I2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\lUjx4FXvv34_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DThokDTW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\asdasda_109.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\PNgE-OKjhgU_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\q2yEYFD5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\snhUvpXC_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0TP13Nyn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\7KXPekwe_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\A7FCl8G35Cs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\gnBmOf7v_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\89UQqPuR4Q4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\yldWawWf_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\v0wUQPs4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1A3zEkCHBl8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\trhfd_1015.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4yTlGiDoxBo_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\9N4HikpX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\OvDMIkTb4XU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\SjJEt0drQZs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\9C_LQa7nnFg_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\trhfd_1017.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\CrBTbDcb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ZIj9BzT4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1oEbrZhr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\as4zD6d86q0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RbpXgk5M1S0_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\BpargJW29Wo_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\VbwTMJroTbI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\PaTrwJbs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\lx4TN9dS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\6Rl7q_kXYbg_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RbpXgk5M1S0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RTHTRS_707.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\zGBzk5SeJOw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\oVMhWJIpHnc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kMI2JME3Aag_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\aKK0B4kpKZA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\C7Ty4ui5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\JD9JJbiJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\MxkTo5F-nvU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3TQqO4N8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Ou8ssKOQzI0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\QzNWGaQi_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UvLAudRA91Y_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cAp5A44HRS8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ljLg4lFbS0Y_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\a7gBQaAFEtw_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\vQKHxtrdEHM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\erwyrhd_338.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HVSv9sgz2ZI_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\8SWZq5we_fk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\e4U3gEDEB58_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0vasozvJYvk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HVSv9sgz2ZI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\JwTPruSFTjk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\API3q8TBGu4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\TuWan04E3gQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\tILABXoHE7s_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\tf_X7GtOGyE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u0393\u00f2\u00fa\u0393\u00f6\u00c9\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00bc\u2564\u00e7\u2568\u00bc\u2568\u00e6\u2564\u00e5\u0393\u00fb\u00c6\u2568\u00d1\u2564\u00e0\u2568\u2524\u0393\u00f6\u00f1\u2564\u00e0\u0393\u00f2\u00f2\u2568\u00c6\u2564\u00e5\u0393\u00f2\u00a3\u2568\u255b\u2564\u00eb\u2568\u00bf\u0393\u00f6\u00e9\u2564\u00e0\u2568\u00a3\u0393\u00f2\u00e6\u2564\u00eb\u2568\u00fa\u2568\u00bc\u2564\u00e7\u2568\u00bd\u2568\u00c6\u2564\u00eb\u2568\u00d1\u2568\u00f9\u2564\u00e5\u0393\u00fb\u00f4\u0393\u00f6\u00e9\u2564\u00eb\u2568\u2310\u2568\u00f9\u2564\u00e5\u2568\u00a1\u2568\u00ed\u2564\u00e5\u2568\u00ac\u0393\u00f6\u00f1\u2564\u00e0\u2568\u00dc\u2568\u00bd\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00ea\u2568\u2556\u2568\u00fb\u2564\u00eb\u2568\u2593\u2568\u00ed2_urlgot_138.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cAp5A44HRS8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3GUaHts0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fMmvH1Fa_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_fPfNbHM16M_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1050.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\2lrARl7utL4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\d_93UNyiVM4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tILABXoHE7s_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\24E0xYYUz44_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4yTlGiDoxBo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\BCVBVC_263.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\dfsafsghg_327.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\bUaC34RU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\vBwKQfJYG1Q_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\6Rl7q_kXYbg_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\SJRnWfHAx_E_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\JPMLt2ZH_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\A7FCl8G35Cs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\lS7tAuv0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\w1T3NmEAt00_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_2RYnSFPD_U_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\C4SQF-UZzkA_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\umOs1WLBkuo_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RYFG_779.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dBllnaSKVfQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\aQysMqg0K7M_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\a2qLzOu_n0s_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\RYFG_777.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\hbTlgnTw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DHhyNrXr_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\qrWTk-2a13o_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\asdasda_107.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YUOfgfuh_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\G3E1YP6agWs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_10.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6Dej3-k3MRE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jILBnY3lB2Q_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\zuCTuKvj_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aKK0B4kpKZA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\truutrdf_1087.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DIsQwAdR8MI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\lUjx4FXvv34_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H_VQJU0Bqpc_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\pinuwjwm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cJvLTWGs-SE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\gJV3TuKF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\OvDMIkTb4XU_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\8pKKdS7rhXo_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\2KvkZ4yo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\fsVC-FnnklU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\emGsAcqs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fBwfFDcgJlk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\EtRfZ2KP_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\bd48s5BpoGY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\ThiaJUQ8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\truutrdf_1081.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0vasozvJYvk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TYsebroPeGY_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NvYo6CS_i_A_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\KQTiHlA11fM_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\xYWhwcqL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dt8YUGoOSgQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\a7D2i0HTXGM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Q876qiBJYfA_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1MVS2QPWbHc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H1AzC-GyKto_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\I-x0G5pAan0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\vKUjLaXO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\8VqTmuq4HcI_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uLGOlxvv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\zuCTuKvj_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\mRqg-WXiR7Q_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\CqJB8ZWLZ-o_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\551_wlV44GU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gzozjcrr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\NnUOjff0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HVSv9sgz2ZI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_5.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\0Ow4cotKOuw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\mwuiYEBdkJs_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\AsGAgf8U2rk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\2KMf6p5Q_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\q78eIX56_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\dOM7frJMFbc_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\N1Q9v-saJ_g_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uyeWsodv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\7R1m3V8C30g_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\MOST Shocking CCTV footage (_TwPzPRK7dc)_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\EtRfZ2KP_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\asdasda_108.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\FZDDNtcaBcw_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cBNVcBk3rjg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\zbg2jsE4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\HVSv9sgz2ZI_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RTHTRS_720.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Gr3ikl6A2bE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\T56HlypCEyU_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\FXC43fACfPc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\vnUS5WN7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\BUjGBAPb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\cBNVcBk3rjg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\GYvqfFzN_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\X6V5o-uCYF4_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6Dej3-k3MRE_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Q876qiBJYfA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\g-qjkePEXQA_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cwLtq5Y3_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\nBO2Wlr3LhU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\videoplayback_95.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\qaAclucigpY_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\VIPpAkyG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u2568\u2524\u2568\u2556\u2564\u00eb\u2568\u2310\u2568\u00fb\u2564\u00e7\u2568\u00e1\u2568\u00fb\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e0\u0393\u00f2\u00e6\u2568\u00ba\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e7\u2568\u00f1\u2568\u00bb\u2564\u00e7\u2568\u2591\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00e6\u0393\u00f2\u00e6\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00a3\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00e5\u2568\u00d6\u2568\u00a2\u2564\u00e7\u2568\u00bc\u2568\u00bb\u2564\u00e7\u2568\u00a2\u2568\u2591\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00e6_urlgot_121.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\sadsa_958.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\p19HiyCX7EQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_9.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aIg9Yb0O7Hg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cAp5A44HRS8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\a7gBQaAFEtw_5.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\BKtajPcB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\myaBOqJ3_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\sPd5Wmkc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\2sy_eLpH-PI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\fwEk96k8g_I_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RTHTRS_718.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\asdasda_112.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\pr8yRPMO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\F7W6PQ3V3y8_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NPeKBgURcxI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\ASGGSDG_183.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cfks5NXs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\asdasda_111.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6mrIIcAQ2fI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3ZY4hpms_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\qmvilMkD57M_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\rRbZUKgk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\g6jdqkcdgqk_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0_DzLlklZa0_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\qrWTk-2a13o_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\40l8LuP4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TJfoIe801t8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UArjSm2Y_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\p19HiyCX7EQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jCD7lUJQ7Xc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e7\u0393\u00f2\u00a3\u2568\u00ed\u2564\u00e0\u2568\u00e1\u2568\u2556\u2564\u00eb\u2568\u00e6\u2568\u255c\u2564\u00e0\u0393\u00fb\u00e6\u2568\u0192\u2564\u00e5\u0393\u00f2\u00fb\u0393\u00f2\u00fb\u2564\u00e5\u0393\u00f2\u00fb\u0393\u00f2\u00fb\u2564\u00e5\u2568\u00d6\u2568\u00fa\u2564\u00e5\u2568\u00ab\u0393\u00f2\u00f3\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00a3\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00e0\u2568\u00f2\u2568\u2555\u2564\u00e7\u2568\u2555\u2568\u00a2\u2564\u00e5\u2568\u00a2\u2568\u00a5\u2564\u00e5\u2568\u00ed\u2568\u00f6_urlgot_317.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HVSv9sgz2ZI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\qEeRHumV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cBNVcBk3rjg_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aIg9Yb0O7Hg_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\vGCZpdPR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NSdXEN1l_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\vCO6CZNt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_11.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oIEZ45OCmAw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\i5xJxtv4gXs_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\J2Am3J0z_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ycOdxOJt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1dsLuL5Lvbc_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DX5wwFlF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\iquSbj5Wqj0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RNOSWjgC_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Mi4nMB8AHxI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\iqAmk7ES_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3CQi0ZCCHvc_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\EBwt3Thb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\truutrdf_1085.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cy1gi3ZJb_c_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\mwuiYEBdkJs_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1109.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\p19HiyCX7EQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\g-qjkePEXQA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\bd48s5BpoGY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\NeyOxUHJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\PTy2vx8Ejas_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\VfDyc4ORBSI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\cAp5A44HRS8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\E0Huf4Qi0JE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\NPeKBgURcxI_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\MBxCX6pw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\PqB7UvdW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TX2ePcRo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\dOM7frJMFbc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bdZ7ubago6I_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\lhxMVtH7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\EB08Cq4t_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\X0fP5VQMrbg_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\6Dej3-k3MRE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\9JxNZtUK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\m3PZvVSL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Wq0BuA8GM84_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Qj3oZsaqNGE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DTq6Gu30-uA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\6hots6jj_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\iquSbj5Wqj0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jTbvVbkUaPM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\JRL5Vvql_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HW48LUZKOL4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JsjF2OSJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\qIRZ4SMf_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\I7u5I8Oa_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\RIXaF_TkLlU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Gr3ikl6A2bE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QaIY5Au8yOc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\MxkTo5F-nvU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HAoCHqFV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\s-jW4cyavW0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aIg9Yb0O7Hg_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RTHTRS_706.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JgXAUoyJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1039.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\fRYqXRRcqCs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1dsLuL5Lvbc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\oVMhWJIpHnc_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\vAV3vIGr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\FpDZIe2z_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Jt4WbOZeT7s_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\9haGKtHJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\zWevuNTR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9C_LQa7nnFg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oVMhWJIpHnc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RTDSFDSA_677.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6Dej3-k3MRE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\erwyrhd_337.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\v4dhdnsxiX4_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tuQyUHkOpdk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\7qtRgyFsk3s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\cJvLTWGs-SE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\l82NDOvk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\eF5S8iGLAm4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ev8va5uR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tPpXT9VI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\vDeu44Su_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\RIXaF_TkLlU_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\CqJB8ZWLZ-o_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\truutrdf_1083.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0TFi8D8IBg4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\8tWVjrUW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kLHNW0uRutY_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\R2x2rOWh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3CQi0ZCCHvc_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\fO2vb61DcUk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\TYX5vuHO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\80ySNph9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\qaAclucigpY_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\N8M1mmW9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\xW8Esfp9_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RIXaF_TkLlU_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\gNIohJfdvEc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kFbpQrq2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ykI6keNQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ug2tQMG8DC0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\UQ42UqFJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\XpQkd2Ug_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3kpviz7lAMY_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\5zVqOS0l_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cBNVcBk3rjg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HVSv9sgz2ZI_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JWFfsHEG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RGIpCpdlzI8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\y2pGPMqikJg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tILABXoHE7s_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gR4OsEPl894_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\EizIwdII_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\e8jli13nLaM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\ZCUy99AN_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kBSHDWaGFyc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\8MuRpAyP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\MhVfgPWz_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oLs9ckoV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kLHNW0uRutY_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\umOs1WLBkuo_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\hEjHnhy2_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_8.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Pe1uIhp4dAQ_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\R1A_AxUKosk_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\K6WRP2xi_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\I9OYGpUd_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4RqDG4I4iAk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\zWrAqXFn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\36zWWHlldS8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\4yTlGiDoxBo_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\SJRnWfHAx_E_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jCD7lUJQ7Xc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\e5Dmmply_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\fSE4L50n_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jTbvVbkUaPM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\lmfaDmCCRoY_0.avi",
+      "label": 0
+    }
+  ],
+  "val": [
+    {
+      "path": "train\\nonFight\\dOM7frJMFbc_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kLHNW0uRutY_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kOp57sQKMPY_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\GZWxDB1c_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\l4gqDHx9_dI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\39BFeYnbu-I_7.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\S8jXc3sP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\aRvWjteA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gNUhUpxZ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\tf_X7GtOGyE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YL-qwpTMjzk_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\VVQBImyG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\videoplayback_93.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DC10fyQgNqo_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\K6WRP2xi_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\LoQZojhn_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\eb4Oant1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\R1A_AxUKosk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\p1bUxYeJ_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\u1r8f71c_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\SDFDSSDF_973.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H_VQJU0Bqpc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00e5\u2568\u00a2\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00eb\u2568\u2524\u2568\u00e1\u2564\u00e0\u2568\u20a7\u2568\u00f2\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00c9\u2564\u00e7\u0393\u00f2\u00a2\u2568\u2524\u2564\u00e0\u0393\u00fb\u00e6\u2568\u0192\u2564\u00e4\u0393\u00f2\u00a5\u2568\u2310\u2564\u00e5\u2568\u00d6\u2568\u00fa\u2564\u00e5\u2568\u00ab\u0393\u00f2\u00f3\u2564\u00e5\u2568\u00aa\u2568\u00ba\u2564\u00e5\u2568\u255b\u0393\u00f6\u00f1 \u2564\u00ea\u2568\u00c9\u2568\u00e6\u2564\u00e5\u2568\u00a1\u0393\u00f6\u00c9\u2564\u00e7\u2568\u00ab\u2568\u255d\u2564\u00eb\u2568\u00ba\u0393\u00f6\u00f1\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00eb\u2568\u2502\u2568\u2310\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00fb_urlgot_268.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dOM7frJMFbc_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\xWBtjX00_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\qrWTk-2a13o_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3CQi0ZCCHvc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Pe1uIhp4dAQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\SmBrtaGJ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\uGGFPY75IYQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\hrBh5x_3hW0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\8SWZq5we_fk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\KDOVTf7T_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\FWsNU4WI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\vBwKQfJYG1Q_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\310cmTrl_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gI4u3PwG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\bK1saynI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tILABXoHE7s_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\DjLWv5mr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\BOnEkkm1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\adg5WJ6y_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PTy2vx8Ejas_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\EGhykgb4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kLHNW0uRutY_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Ou8ssKOQzI0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\erwyrhd_340.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Xh6FNqKDMak_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\VjDGXzWt_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\XJfaYlr0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\kMI2JME3Aag_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\e5Dmmply_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\okA8k7rF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\MmUtpm6Z_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\YukOkfIj_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\qrWTk-2a13o_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\L9tYVvJY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\CBfRtxkO1bE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\gnBmOf7v_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Am9mUxPTvK4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\jILBnY3lB2Q_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1tU4kxa51vw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RQbYptdw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1112.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oM-goKOVjeU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\8SWZq5we_fk_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\i7MJRWrW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\LiCakkNH_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\JPIeYvRgo6I_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\HtbVjsRA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\fK7CSrQ6OpM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Er-sOPbvRVI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\LSJPhJTB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\U-rD98WfBYs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\z7dOEJwUpVk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_RziL1Ds6xU_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cJvLTWGs-SE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\umOs1WLBkuo_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\DAMfrqpC_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RIXaF_TkLlU_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556-\u2564\u00ea\u2568\u00a2\u0393\u00fb\u00c6\u2564\u00e0\u2568\u00bd\u0393\u00f2\u00a3\u2564\u00ea\u2568\u255c\u2568\u2562\u2564\u00e0\u2568\u2510\u2568\u00bb\u2564\u00e5\u2568\u00ac\u0393\u00f6\u00f1\u2564\u00e0\u2568\u00dc\u2568\u00bd\u2564\u00e5\u2568\u255b\u0393\u00f6\u00f1\u2564\u00e5\u2568\u00d6\u2568\u00fa\u2564\u00e0\u2568\u2561\u0393\u00f6\u00e9\u2564\u00e0\u2568\u2557\u2568\u00a3\u2564\u00e7\u2568\u00dc\u2568\u2510_urlgot_210.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0vasozvJYvk_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\X14e9Fwxa8w_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\rtSWit6k_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\z19nkHMw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\9U8J4abJGDg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\N1Q9v-saJ_g_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\FXC43fACfPc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Y-TiUAODEYw_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\zuCTuKvj_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0H2s9UJcNJ0_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\1Kbw1bUw_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\6doZoiaG9PM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\OTVE3eLAuUM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aIg9Yb0O7Hg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\s2S2nIWk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\6TDF_13.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ww9L6ULb_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\GafFu4IZtIA_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\mxlWEjopk_c_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\6Rl7q_kXYbg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H_VQJU0Bqpc_3.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1105.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ajJRyYZUEtA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Lui5zaon_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\a7D2i0HTXGM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\-1l5631l3fg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\wetyh_1205.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\lmfaDmCCRoY_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\BOLcNZ5O_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\kExp3yhspR0_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\P8jyDT3M_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\8pKKdS7rhXo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\gNIohJfdvEc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\sadsa_960.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\pKOUG5AqLpY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\8mxsp2RTU6M_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\XVfkS6rM_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UIsigi4O-sI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\AkTZX27QhjE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Pe1uIhp4dAQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jILBnY3lB2Q_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_TwPzPRK7dc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\86lUShJD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tILABXoHE7s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cqP8OyUh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fJkWWpNB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\NxtwlqSnLbY_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\dt8YUGoOSgQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dkTzP0SB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\kMI2JME3Aag_4.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3OKArbzg1uc_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\s3gaPKuW_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\aKgSasWRJ2s_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\MxkTo5F-nvU_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\5RayT2Vy0EA_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\SmBrtaGJ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\4HH7yMU8y9A_3.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Qj3oZsaqNGE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NxtwlqSnLbY_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\JPIeYvRgo6I_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dxzvtJ4gPC0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Suv_mMs8J9g_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\grxri53x_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4fY0Iv4t_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\TJfoIe801t8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gHcG_c1i4uE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\qmvilMkD57M_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nVdn1krnTCQ_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Y1y9Gxs6_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\zGBzk5SeJOw_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tUzd4cN2_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\GqDA8E4j_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RTCFGASH_573.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\4Fqxw7Nl_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\JJG0bHPur50_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\QCgEbCBH_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4HH7yMU8y9A_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0lHQ2f0d_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\bzw-HKuuQbg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\i2sLegg2JPA_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\qaAclucigpY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\nNUeqFgG_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\LruY67tu_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PTy2vx8Ejas_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6b254l7P_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\tf_X7GtOGyE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\cw8fPfUL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oYFVr2kK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\THqDidIr4Xs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\EDaOod1H_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\48J5lk4QcpE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\ThiaJUQ8_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0H2s9UJcNJ0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6mrIIcAQ2fI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\lQ39ffan_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\VzHfmJeI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\i2sLegg2JPA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dOM7frJMFbc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\QUGT4a6qcJs_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\SXd2yu2LHv0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\muJDFQqbbmA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RTCFGASH_579.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\6JmCJbug_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\E0Huf4Qi0JE_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Ob0YCDgS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\zOqs7Oh9oDM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\66U2c3YMjOI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\E2gqgFNyPL8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1dsLuL5Lvbc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Ry5c1PbcIa0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\THqDidIr4Xs_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\asdasda_110.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\RIXaF_TkLlU_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\qaAclucigpY_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Jq8neqBlL2Y_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\sy7BoRGE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\r8PX3ZJ1_II_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u0393\u00f2\u00fa\u0393\u00f6\u00c9\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00bc\u2564\u00e7\u2568\u00bc\u2568\u00e6\u2564\u00e5\u0393\u00fb\u00c6\u2568\u00d1\u2564\u00e0\u2568\u2524\u0393\u00f6\u00f1\u2564\u00e0\u0393\u00f2\u00f2\u2568\u00c6\u2564\u00e5\u0393\u00f2\u00a3\u2568\u255b\u2564\u00eb\u2568\u00bf\u0393\u00f6\u00e9\u2564\u00e0\u2568\u00a3\u0393\u00f2\u00e6\u2564\u00eb\u2568\u00fa\u2568\u00bc\u2564\u00e7\u2568\u00bd\u2568\u00c6\u2564\u00eb\u2568\u00d1\u2568\u00f9\u2564\u00e5\u0393\u00fb\u00f4\u0393\u00f6\u00e9\u2564\u00eb\u2568\u2310\u2568\u00f9\u2564\u00e5\u2568\u00a1\u2568\u00ed\u2564\u00e5\u2568\u00ac\u0393\u00f6\u00f1\u2564\u00e0\u2568\u00dc\u2568\u00bd\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00ea\u2568\u2556\u2568\u00fb\u2564\u00eb\u2568\u2593\u2568\u00ed2_urlgot_139.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\a7gBQaAFEtw_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\a7gBQaAFEtw_4.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\MOST Shocking CCTV footage (_TwPzPRK7dc)_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PFw7SeFOD04_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\mHY487R6_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ajJRyYZUEtA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\golJWJCak1k_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\39BFeYnbu-I_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NPeKBgURcxI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9qjOCoE7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\0xoSMgad_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\i2sLegg2JPA_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3OKArbzg1uc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\vXGRa5D6_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\1dsLuL5Lvbc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fBwfFDcgJlk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gAFkygeJ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\WHNtrI7MEUg_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\etyiEs3j8x8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\SJ9WphBI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\OTVE3eLAuUM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\IynvwHe9W3U_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Mv3d3zJy_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mVTcBPrjh-E_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RGIpCpdlzI8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\a7gBQaAFEtw_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\YaWxiAtCwxE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\2gkuUVq1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\fO2vb61DcUk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jILBnY3lB2Q_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gBBRxXBI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\zOqs7Oh9oDM_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6Dej3-k3MRE_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\WCHYnPMG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\E2gqgFNyPL8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\YDOJvzChqSg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\0_DzLlklZa0_6.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\tf_X7GtOGyE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\g6jdqkcdgqk_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\6Rl7q_kXYbg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\RTHTRS_699.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Qqfn1urQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\HVSv9sgz2ZI_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Tzn3HwZD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_9.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Ri_poPbOu-k_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\BCVBVC_264.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\i5xJxtv4gXs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\pKOUG5AqLpY_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\Assault006_x264_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\v4dhdnsxiX4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\vu6lIsQm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\6Rl7q_kXYbg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Qtcwz_K2Gvo_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\videoplayback (2)_74.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\LtfqEsod_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_9.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\_6-B11R9FJM_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\nNUeqFgG_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\7gLKFV5voOg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\scznszmE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\vQKHxtrdEHM_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\AG0ofjSP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\gUYfrLHe_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9CeKXVvD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\iE9hzgQD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\NxtwlqSnLbY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UFA7LVk0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\z19nkHMw_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nVdn1krnTCQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\0AvTZRYx_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\6TDF_27.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\oUqxGhTe_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\l4gqDHx9_dI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fJMvC8TV_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u2568\u2524\u2568\u2556\u2564\u00eb\u2568\u2310\u2568\u00fb\u2564\u00e7\u2568\u00e1\u2568\u00fb\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e0\u0393\u00f2\u00e6\u2568\u00ba\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e7\u2568\u00f1\u2568\u00bb\u2564\u00e7\u2568\u2591\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00e6\u0393\u00f2\u00e6\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00a3\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00e5\u2568\u00d6\u2568\u00a2\u2564\u00e7\u2568\u00bc\u2568\u00bb\u2564\u00e7\u2568\u00a2\u2568\u2591\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00e6_urlgot_122.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\3OKArbzg1uc_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\R1A_AxUKosk_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\NvYo6CS_i_A_1.avi",
+      "label": 0
+    }
+  ],
+  "test": [
+    {
+      "path": "train\\nonFight\\OAfV0xPIhZw_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\I-QiUMPTWNE_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\oDGm-DOOyI4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Ae3RYgGF_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\GgT095uX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\BySljls4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\fK7CSrQ6OpM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\NxtwlqSnLbY_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\dt8YUGoOSgQ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\videoplayback_92.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\EUgjFWbm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\FSaZ8wiFw8Q_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\JOMXfA1R_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\VYWWsld6ibI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u2568\u2524\u2568\u2556\u2564\u00eb\u2568\u2310\u2568\u00fb\u2564\u00e7\u2568\u00e1\u2568\u00fb\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e0\u0393\u00f2\u00e6\u2568\u00ba\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00e7\u2568\u00f1\u2568\u00bb\u2564\u00e7\u2568\u2591\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00e6\u0393\u00f2\u00e6\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00a3\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00e5\u2568\u00d6\u2568\u00a2\u2564\u00e7\u2568\u00bc\u2568\u00bb\u2564\u00e7\u2568\u00a2\u2568\u2591\u2564\u00c5\u0393\u00f2\u00a5\u2568\u00e6_urlgot_123.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Vd27cYFthms_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\u2Lkzfb0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Yxz9WncB_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\3OKArbzg1uc_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Q0v2MB0b_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\dP20avzQAf8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\l4gqDHx9_dI_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\ug2tQMG8DC0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\UvLAudRA91Y_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\PJDdPv2b9-s_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\G3E1YP6agWs_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\HUuRelBW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\RTDSFDSA_675.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\trtrhrt_1053.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6TDF_14.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\e6iHy7V5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\2lrARl7utL4_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\-1l5631l3fg_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\K_7hT4N2QCE_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\K4qpMWJS_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_6-B11R9FJM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\ECoMcgjR_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\dfsafsghg_325.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\E2gqgFNyPL8_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kExp3yhspR0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\a7gBQaAFEtw_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1OXrIaQK_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\24E0xYYUz44_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Gr3ikl6A2bE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\H_VQJU0Bqpc_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RUwo8c4s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\TKBcD3J9Cc8_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\OznqyUJq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\qmvilMkD57M_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\OAfV0xPIhZw_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\BEoVUtDm_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RPESrVE2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\sadsa_961.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\zsvJyWXp_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\zuCTuKvj_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\zMbmPG71_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\JRL5Vvql_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\YL-qwpTMjzk_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\A7FCl8G35Cs_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\l4gqDHx9_dI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Ri_poPbOu-k_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\9GFNxpur_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1r0Wz04q_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\Qtcwz_K2Gvo_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\rfthfd_538.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\zuCTuKvj_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JPIeYvRgo6I_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\5z1f5blMBdk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\_q5Nwh4Z6ao_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\kLHNW0uRutY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\6TDF_15.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\VnDOPZls_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\tIvvuvuJFYc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\D6cjNRiP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_3.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\XM0NI7ZmwWM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\3HCpeji1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1tU4kxa51vw_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\88ndrvAZpE8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\A7FCl8G35Cs_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\kExp3yhspR0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\1Kbw1bUw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\XM0NI7ZmwWM_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\RYFG_775.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_9.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\GhZRf4GIw0w_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1O4KGHbRt3M_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\BpargJW29Wo_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\C4SQF-UZzkA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\nTsOksk7_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\WfjOB1Vq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\bQHNsRpQOIE_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\g9nMwbpZ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\cVYo5yT2_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\a7gBQaAFEtw_4.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\g6jdqkcdgqk_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\xR1o8M5o_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\ljLg4lFbS0Y_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\MxkTo5F-nvU_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\nj9Rc3lY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\F7W6PQ3V3y8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\nVdn1krnTCQ_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\f9jcrHqO_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\UIAGmwT1_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\4yzwSsis_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\gR4OsEPl894_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Xcd0v-KhKL4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\5RayT2Vy0EA_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\KklEipxk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\TYRFDVD_1110.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\Pe1uIhp4dAQ_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3SS0E4SmTk8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\ZCa5f4yq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\fNy9LoED_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\83d-16REC40_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\SXd2yu2LHv0_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\VYWWsld6ibI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mRqg-WXiR7Q_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\F7W6PQ3V3y8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\v1Sb6NhU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\xKq3hlefCUI_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\oDGm-DOOyI4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DC10fyQgNqo_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\tzdvtHL7Akk_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\4x9VdiCc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\7Xe6eysGKeU_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\jtzWSah-BZM_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\uAKRFGFR_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\VbwTMJroTbI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\kExp3yhspR0_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\MvYkXHIi_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\DeCoZoey_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\mx0UXBFc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\SJRnWfHAx_E_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vQKHxtrdEHM_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\E2gqgFNyPL8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\2qFnVnnZ_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Swr7caI0_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_13.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\7icHwpC_d44_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\3djtKN3k_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\88ndrvAZpE8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\cy1gi3ZJb_c_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\PJDdPv2b9-s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\O2rd3LTv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\YDOJvzChqSg_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\H1AzC-GyKto_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\truutrdf_1084.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Fc45rUKM_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Jq8neqBlL2Y_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\JJG0bHPur50_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ypdSZICv_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\Ek0jcAoCRw8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\zHRkgmIT_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\GodUly2k_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\etyiEs3j8x8_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\y4njAG00_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\RFUr2krY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\CBfRtxkO1bE_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\X6V5o-uCYF4_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\F7W6PQ3V3y8_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\asdasda_113.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\lNAzMZFI_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Km94kW0O_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\UoS3KEYq_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\JECBfnp2ZXc_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\YL-qwpTMjzk_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ELL0jBUP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dHEI4OkhC64_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\24E0xYYUz44_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\JBRqNBaP_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\kMI2JME3Aag_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\r0mVR4J6_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\1A3zEkCHBl8_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\ROiHwksPSrg_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\X6V5o-uCYF4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\mwuiYEBdkJs_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4yTlGiDoxBo_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\o9sRXy5r_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\b6XfVAZC9Zs_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\4grE6XdY_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\F6kgeh23_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\AkTZX27QhjE_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\PlHzsigAFas_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\UvLAudRA91Y_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_5.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\JECBfnp2ZXc_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\uXf4C-YwbtM_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\8VqTmuq4HcI_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\Xcd0v-KhKL4_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\y_vX9FtjLaQ_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DC10fyQgNqo_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\v4dhdnsxiX4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\uWH7kvNG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\jj9SJGft_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\SJRnWfHAx_E_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\CqJB8ZWLZ-o_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\umOs1WLBkuo_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\jbSCSexU_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\d1b2n9qX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00e5\u2568\u00a2\u2568\u00a5\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00a2\u2564\u00eb\u2568\u2524\u2568\u00e1\u2564\u00e0\u2568\u20a7\u2568\u00f2\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00c9\u2564\u00e7\u0393\u00f2\u00a2\u2568\u2524\u2564\u00e0\u0393\u00fb\u00e6\u2568\u0192\u2564\u00e4\u0393\u00f2\u00a5\u2568\u2310\u2564\u00e5\u2568\u00d6\u2568\u00fa\u2564\u00e5\u2568\u00ab\u0393\u00f2\u00f3\u2564\u00e5\u2568\u00aa\u2568\u00ba\u2564\u00e5\u2568\u255b\u0393\u00f6\u00f1 \u2564\u00ea\u2568\u00c9\u2568\u00e6\u2564\u00e5\u2568\u00a1\u0393\u00f6\u00c9\u2564\u00e7\u2568\u00ab\u2568\u255d\u2564\u00eb\u2568\u00ba\u0393\u00f6\u00f1\u2564\u00e0\u2568\u0192\u2568\u00ed\u2564\u00eb\u2568\u2502\u2568\u2310\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00fb_urlgot_267.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\NW4ndzCa_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\FZDDNtcaBcw_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\1W8hsVvyKt4_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\JPIeYvRgo6I_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\vwQvNOlX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\_q5Nwh4Z6ao_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\11vr9Jho_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\s-jW4cyavW0_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\i5xJxtv4gXs_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\1O4KGHbRt3M_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\DHhyNrXr_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\Cw0HuNI5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\gR4OsEPl894_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\sq03O3JL_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\8VqTmuq4HcI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\yvNawsRf_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\dP20avzQAf8_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\KQTiHlA11fM_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\2sy_eLpH-PI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\\u2564\u00e0\u0393\u00f2\u00fa\u0393\u00f6\u00c9\u2564\u00e4\u0393\u00f2\u00f2\u2568\u00bc\u2564\u00e7\u2568\u00bc\u2568\u00e6\u2564\u00e5\u0393\u00fb\u00c6\u2568\u00d1\u2564\u00e0\u2568\u2524\u0393\u00f6\u00f1\u2564\u00e0\u0393\u00f2\u00f2\u2568\u00c6\u2564\u00e5\u0393\u00f2\u00a3\u2568\u255b\u2564\u00eb\u2568\u00bf\u0393\u00f6\u00e9\u2564\u00e0\u2568\u00a3\u0393\u00f2\u00e6\u2564\u00eb\u2568\u00fa\u2568\u00bc\u2564\u00e7\u2568\u00bd\u2568\u00c6\u2564\u00eb\u2568\u00d1\u2568\u00f9\u2564\u00e5\u0393\u00fb\u00f4\u0393\u00f6\u00e9\u2564\u00eb\u2568\u2310\u2568\u00f9\u2564\u00e5\u2568\u00a1\u2568\u00ed\u2564\u00e5\u2568\u00ac\u0393\u00f6\u00f1\u2564\u00e0\u2568\u00dc\u2568\u00bd\u2564\u00e4\u0393\u00f2\u00e6\u2568\u00a2\u2564\u00e4\u0393\u00f2\u00f9\u0393\u00f2\u00f3\u2564\u00e7\u2568\u00bd\u2568\u00ed\u2564\u00e5\u2568\u20a7\u2568\u2556\u2564\u00ea\u2568\u2556\u2568\u00fb\u2564\u00eb\u2568\u2593\u2568\u00ed2_urlgot_140.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\B3UdlWcs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\R1A_AxUKosk_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\jILBnY3lB2Q_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\dRlBBYvf_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\ZwhC7Kyg_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\LqW9A21g_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\uWQG2hQT_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\MX77f2TD_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\vBwKQfJYG1Q_6.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\88ndrvAZpE8_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\NWqRgoGh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\API3q8TBGu4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\wetrew_1195.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\7qtRgyFsk3s_1.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\tf_X7GtOGyE_2.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\0Ow4cotKOuw_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\J2rsCgMC_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\oDGm-DOOyI4_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\v4dhdnsxiX4_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\mRqg-WXiR7Q_3.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\t2z75yT2S_M_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\24E0xYYUz44_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\EckGCByW_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DTq6Gu30-uA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\kExp3yhspR0_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Am9mUxPTvK4_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_5.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\OAfV0xPIhZw_2.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\nuf-d5GugL0_10.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\83d-16REC40_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\JwTPruSFTjk_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\HtbVjsRA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\gHcG_c1i4uE_1.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\SDFDSSDF_974.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RfFGwwhG_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\4RqDG4I4iAk_7.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\tILABXoHE7s_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Wby1vUy8aYI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\Cce4ogHp_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\qrWTk-2a13o_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\E0rUpvbX_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\uGGFPY75IYQ_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\nonFight\\qyRJeYN5_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\p9d6QmKh_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\K_7hT4N2QCE_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\g-qjkePEXQA_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\i5xJxtv4gXs_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\4HH7yMU8y9A_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\QUGT4a6qcJs_2.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\NEUya2Rr_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\JECBfnp2ZXc_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DIsQwAdR8MI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\u1r8f71c_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\ULiIpQ6s_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\nonFight\\7emxm3za_0.avi",
+      "label": 0
+    },
+    {
+      "path": "val\\fight\\nVdn1krnTCQ_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\RbpXgk5M1S0_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\QUGT4a6qcJs_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\Assault010_x264_1.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\rjHXmq47_0.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\1DwRGRND_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\nonFight\\aQysMqg0K7M_3.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\nonFight\\tILABXoHE7s_2.avi",
+      "label": 0
+    },
+    {
+      "path": "train\\fight\\DHhyNrXr_0.avi",
+      "label": 1
+    },
+    {
+      "path": "val\\fight\\7gLKFV5voOg_1.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\0H2s9UJcNJ0_4.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\6mrIIcAQ2fI_0.avi",
+      "label": 1
+    },
+    {
+      "path": "train\\fight\\uKFI67bUzfg_1.avi",
+      "label": 1
+    }
+  ]
+}
