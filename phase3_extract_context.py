@@ -1,29 +1,3 @@
-"""
-Phase 3 — Extract 3 Context Streams từ toàn bộ RWF-2000
-=========================================================
-Chạy:
-  python phase3_extract_context.py ^
-    --root "C:/Users/HA VIET HUNG/Videos/archive/RWF-2000" ^
-    --split "C:/Users/HA VIET HUNG/Videos/archive/split.json" ^
-    --ckpt  "checkpoints/x3ds_best.pth"
-
-Output (lưu vào thư mục cache/):
-  cache/p_base.npy        (N,)    — X3D-S violence probability
-  cache/z_crowd.npy       (N, 4)  — crowd density features
-  cache/z_light.npy       (N, 4)  — lighting features
-  cache/z_motion.npy      (N, 4)  — motion + synchrony features
-  cache/labels.npy        (N,)    — ground truth labels
-  cache/splits.npy        (N,)    — 0=train, 1=val, 2=test
-  cache/context_13dim.npy (N,13)  — concat + standardized (dùng ở Phase 4)
-  cache/scaler.pkl                — StandardScaler fit trên train
-
-Thời gian ước tính:
-  p_base   : ~30 phút (GPU)
-  z_crowd  : ~45 phút (CPU, YOLO)
-  z_light  : ~5  phút (CPU, OpenCV)
-  z_motion : ~20 phút (CPU, Farneback)
-"""
-
 import cv2
 import json
 import pickle

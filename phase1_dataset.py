@@ -1,14 +1,3 @@
-"""
-Phase 1 — Dataset class + DataLoader test
-==========================================
-File này gồm 2 phần:
-
-  Phần 1: class RWF2000Dataset  → dùng lại ở tất cả experiment
-  Phần 2: __main__              → test DataLoader, kiểm tra speed
-
-Chạy: python phase1_dataset.py --root /path/to/RWF-2000 --split split.json
-"""
-
 import cv2
 import json
 import time

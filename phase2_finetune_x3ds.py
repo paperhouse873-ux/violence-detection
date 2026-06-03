@@ -1,19 +1,3 @@
-"""
-Phase 2 — Fine-tune X3D-S trên RWF-2000 (FIXED)
-==================================================
-Fix quan trọng:
-  1. Xóa Softmax bên trong X3D head (model.blocks[-1].act = Identity)
-     -> X3D head có Softmax, với 1 output thì softmax luôn = 1.0
-  2. Dùng BCEWithLogitsLoss thay BCELoss
-  3. Không apply sigmoid 2 lần (truyền logits trực tiếp vào loss)
-
-Chạy:
-  python phase2_finetune_x3ds.py ^
-    --root "C:/Users/HA VIET HUNG/Videos/archive/RWF-2000" ^
-    --split "C:/Users/HA VIET HUNG/Videos/archive/split.json" ^
-    --epochs 20 --batch_size 8 --lr 1e-3
-"""
-
 import json
 import time
 import torch

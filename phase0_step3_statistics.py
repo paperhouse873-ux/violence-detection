@@ -1,13 +1,3 @@
-"""
-Phase 0 — Step 3: Thống kê dataset (duration, fps, resolution, class dist)
-============================================================================
-Chạy: python phase0_step3_statistics.py --root /path/to/RWF-2000
-
-Output:
-  - In bảng thống kê ra terminal
-  - Lưu dataset_stats.csv
-"""
-
 import cv2
 import json
 import argparse

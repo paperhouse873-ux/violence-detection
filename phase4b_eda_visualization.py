@@ -1,28 +1,3 @@
-"""
-Phase 4b — EDA & Advanced Visualization theo 3 Research Questions
-================================================================
-Đồng bộ với file thuyết trình DAP391m_ViolenceDetection_Report.pptx.
-
-  RQ1: Does X3D-S + Context Gating reduce FPR compared to X3D-S alone?
-  RQ2: Which context stream contributes most to FPR reduction?
-  RQ3: Does the CGM framework generalize across datasets?
-  RQ4: Is the Motion-chaos stream redundant alongside X3D?
-
-Chạy:
-  "C:/Users/HA VIET HUNG/.conda/envs/violence_det/python.exe" phase4b_eda_visualization.py
-
-Input (đã có sẵn):
-  cache/p_base.npy, z_crowd.npy, z_light.npy, z_motion.npy, labels.npy, splits.npy
-  dataset_stats.csv                      (metadata RWF-2000)
-  results/ablation_results.json          (E0-E5)
-  [tùy chọn] results/phase6_results.json (kết quả cross-dataset RLVS, nếu đã chạy)
-
-Output:
-  figures/*.png                 — biểu đồ 300 DPI cho paper/slide
-  results/feature_stats.csv     — bảng khả năng phân biệt 12 feature
-  results/rlvs_stats.csv        — metadata RLVS (tạo 1 lần, cache lại)
-"""
-
 import json
 import warnings
 from pathlib import Path

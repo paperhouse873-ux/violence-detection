@@ -1,22 +1,3 @@
-"""
-Phase 4 — Train Context Gating Module + Ablation E0–E5
-========================================================
-Chạy:
-  python phase4_train_cgm.py
-
-Đọc cache/ từ Phase 3, train 6 ablation experiments:
-  E0: X3D-S only (baseline — đã có từ Phase 2)
-  E1: + crowd stream only
-  E2: + lighting stream only
-  E3: + motion stream only
-  E4: full 3 streams (proposed method)
-  E5: E4 + cost-sensitive pos_weight=3
-
-Output:
-  results/ablation_results.json
-  results/ablation_table.csv
-"""
-
 import json
 import numpy as np
 import torch
