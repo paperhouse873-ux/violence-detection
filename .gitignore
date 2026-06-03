@@ -1,12 +1,8 @@
 RWF-2000/
-checkpoints/
-cache/
-results/
+RLVS/
 __pycache__/
-*.pth
-*.npy
-*.pkl
 *.pyc
 *.pt
 dataset_stats.csv
 wandb/
+yolov8n.pt

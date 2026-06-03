@@ -1,20 +1,24 @@
 """
-Phase 5 — Train 3 modern base detectors + Apply CGM
-=====================================================
-Models (all 2022+, timm pretrained, A100-compatible):
-  M1: SwinV2-S + LSTM      — Swin Transformer V2 Small (Liu et al., CVPR 2022)
-  M2: ConvNeXt-S + LSTM    — ConvNeXt Small (Liu et al., CVPR 2022)
-  M3: EfficientNetV2-S+LSTM— EfficientNetV2 Small (Tan & Le, ICML 2021/2022)
+Phase 5 — Train 3 video models + Apply CGM (model-agnostic proof)
+===================================================================
+Dùng ĐÚNG approach đã thành công với X3D-S ở Phase 2:
+  - Load từ pytorchvideo hub (pretrained Kinetics-400)
+  - Thay head: Linear(feat_dim → 1)
+  - Xóa internal Softmax: act = Identity()
+  - BCEWithLogitsLoss (không double sigmoid)
+  - lr = 1e-3, unfreeze toàn bộ
 
-Architecture: per-frame 2D CNN → LSTM temporal → binary classifier
-Proven approach: no HuggingFace API complexity, no shape issues.
+Models:
+  M1: X3D-M       — X3D expanded (Fan et al., CVPR 2020)
+  M2: Slow-R50    — SlowFast single-stream (Feichtenhofer et al., ICCV 2019)
+  M3: SlowFast-R50— Dual-pathway slow+fast (Feichtenhofer et al., ICCV 2019)
 
 Chạy:
   PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
   python phase5_mvit_swin.py \
     --root "/workspace/RWF2000_full/RWF-2000" \
     --split "/workspace/code/split.json" \
-    --epochs 20 --batch_size 4
+    --epochs 20 --batch_size 8
 """
 
 import json, time, csv
@@ -22,7 +26,6 @@ import torch
 import argparse
 import numpy as np
 import torch.nn as nn
-import timm
 from pathlib import Path
 from tqdm import tqdm
 from torch.utils.data import DataLoader
@@ -43,91 +46,115 @@ if torch.cuda.is_available():
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# 1. 3 Model configs — all 2022+, all different architectures
+# 1. Model builders — exact same approach as X3D-S Phase 2
 # ═══════════════════════════════════════════════════════════════════════════
+
+def remove_head_activation(model):
+    """Xóa Softmax bên trong head — nguyên nhân FPR=1.0"""
+    last = model.blocks[-1]
+    if hasattr(last, "act"):
+        last.act = nn.Identity()
+    if hasattr(last, "activation"):
+        last.activation = nn.Identity()
+    if hasattr(last, "output_act"):
+        last.output_act = nn.Identity()
+
+
+def build_x3d_m():
+    print("\n  Loading X3D-M pretrained Kinetics-400...")
+    model = torch.hub.load(
+        "facebookresearch/pytorchvideo",
+        "x3d_m", pretrained=True, trust_repo=True,
+    )
+    in_f = model.blocks[-1].proj.in_features
+    model.blocks[-1].proj = nn.Linear(in_f, 1)
+    remove_head_activation(model)
+    model._slowfast = False
+    print(f"  X3D-M head: Linear({in_f} → 1), Softmax removed")
+    return model
+
+
+def build_slow_r50():
+    print("\n  Loading Slow-R50 pretrained Kinetics-400...")
+    model = torch.hub.load(
+        "facebookresearch/pytorchvideo",
+        "slow_r50", pretrained=True, trust_repo=True,
+    )
+    # Slow-R50 head: model.blocks[-1].proj
+    in_f = model.blocks[-1].proj.in_features
+    model.blocks[-1].proj = nn.Linear(in_f, 1)
+    remove_head_activation(model)
+    model._slowfast = False
+    model._slow_only = True
+    print(f"  Slow-R50 head: Linear({in_f} → 1), Softmax removed")
+    return model
+
+
+def build_slowfast_r50():
+    print("\n  Loading SlowFast-R50 pretrained Kinetics-400...")
+    model = torch.hub.load(
+        "facebookresearch/pytorchvideo",
+        "slowfast_r50", pretrained=True, trust_repo=True,
+    )
+    in_f = model.blocks[-1].proj.in_features
+    model.blocks[-1].proj = nn.Linear(in_f, 1)
+    remove_head_activation(model)
+    model._slowfast = True
+    print(f"  SlowFast-R50 head: Linear({in_f} → 1), Softmax removed")
+    return model
+
+
+def model_forward(model, videos):
+    """
+    Unified forward pass.
+    SlowFast cần list [slow, fast]; các model khác nhận tensor trực tiếp.
+    """
+    if getattr(model, "_slowfast", False):
+        # SlowFast: slow=every 4th frame, fast=all frames
+        slow = videos[:, :, ::4, :, :]   # (B, C, T/4, H, W)
+        fast = videos                      # (B, C, T,   H, W)
+        out = model([slow, fast])
+    elif getattr(model, "_slow_only", False):
+        # Slow-R50: expects list of one tensor
+        out = model([videos])
+    else:
+        out = model(videos)
+
+    # Normalize output shape
+    if isinstance(out, torch.Tensor):
+        if out.dim() == 2:
+            return out.squeeze(1)
+        return out
+    return out
+
 
 MODEL_CONFIGS = [
     {
-        "name":        "SwinV2-S",
-        "backbone":    "swinv2_small_window8_256",
-        "feat_dim":    768,
-        "img_size":    256,          # SwinV2 uses 256x256
-        "lr_backbone": 1e-5,
-        "lr_head":     1e-3,
-        "paper":       "Liu et al., CVPR 2022",
-        "desc":        "Swin Transformer V2 Small — hierarchical shifted-window attention",
+        "name":    "X3D-M",
+        "builder": build_x3d_m,
+        "lr":      1e-3,
+        "paper":   "Fan et al., CVPR 2020",
+        "desc":    "X3D-M — expanded X3D, larger temporal/spatial resolution",
     },
     {
-        "name":        "ConvNeXt-S",
-        "backbone":    "convnext_small",
-        "feat_dim":    768,
-        "img_size":    224,
-        "lr_backbone": 1e-5,
-        "lr_head":     1e-3,
-        "paper":       "Liu et al., CVPR 2022",
-        "desc":        "ConvNeXt Small — modernized CNN with Transformer design principles",
+        "name":    "Slow-R50",
+        "builder": build_slow_r50,
+        "lr":      1e-3,
+        "paper":   "Feichtenhofer et al., ICCV 2019",
+        "desc":    "Slow-R50 — single-stream 3D ResNet, slow temporal stride",
     },
     {
-        "name":        "EfficientNetV2-S",
-        "backbone":    "tf_efficientnetv2_s",
-        "feat_dim":    1280,
-        "img_size":    300,          # EfficientNetV2-S uses 300x300
-        "lr_backbone": 1e-5,
-        "lr_head":     1e-3,
-        "paper":       "Tan & Le, ICML 2021",
-        "desc":        "EfficientNetV2 Small — progressive learning, Fused-MBConv",
+        "name":    "SlowFast-R50",
+        "builder": build_slowfast_r50,
+        "lr":      1e-3,
+        "paper":   "Feichtenhofer et al., ICCV 2019",
+        "desc":    "SlowFast-R50 — dual-pathway slow+fast temporal fusion",
     },
 ]
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# 2. VideoClassifier — per-frame 2D CNN + LSTM
-# ═══════════════════════════════════════════════════════════════════════════
-
-class VideoClassifier(nn.Module):
-    """
-    Input : (B, C, T, H, W)
-    Output: logits (B,)  — no sigmoid, use BCEWithLogitsLoss
-    """
-    def __init__(self, backbone_name: str, feat_dim: int,
-                 hidden: int = 256, dropout: float = 0.3):
-        super().__init__()
-        self.backbone = timm.create_model(
-            backbone_name,
-            pretrained=True,
-            num_classes=0,
-            global_pool="avg",
-        )
-        self.feat_dim = feat_dim
-        self.lstm = nn.LSTM(feat_dim, hidden, num_layers=1,
-                            batch_first=True, dropout=0)
-        self.drop = nn.Dropout(dropout)
-        self.fc   = nn.Linear(hidden, 1)
-        # Init FC bias to 0 — avoids all-positive / all-negative at start
-        nn.init.zeros_(self.fc.bias)
-
-    def forward(self, x):
-        B, C, T, H, W = x.shape
-        x = x.permute(0, 2, 1, 3, 4).reshape(B * T, C, H, W)
-        feats = self.backbone(x).reshape(B, T, self.feat_dim)
-        _, (h_n, _) = self.lstm(feats)
-        logits = self.fc(self.drop(h_n[-1])).squeeze(1)
-        return logits
-
-    def param_groups(self, lr_backbone: float, lr_head: float):
-        """Return param groups with different LR for backbone vs head."""
-        backbone_params = list(self.backbone.parameters())
-        head_params = list(self.lstm.parameters()) + \
-                      list(self.drop.parameters()) + \
-                      list(self.fc.parameters())
-        return [
-            {"params": backbone_params, "lr": lr_backbone},
-            {"params": head_params,     "lr": lr_head},
-        ]
-
-
-# ═══════════════════════════════════════════════════════════════════════════
-# 3. Metrics
+# 2. Metrics
 # ═══════════════════════════════════════════════════════════════════════════
 
 def compute_metrics(labels, probs, threshold=0.5):
@@ -147,7 +174,7 @@ def compute_metrics(labels, probs, threshold=0.5):
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# 4. Train / Evaluate
+# 3. Train / Evaluate — identical to Phase 2
 # ═══════════════════════════════════════════════════════════════════════════
 
 def train_epoch(model, loader, optimizer, criterion, name, epoch):
@@ -158,7 +185,7 @@ def train_epoch(model, loader, optimizer, criterion, name, epoch):
         videos = videos.to(DEVICE, non_blocking=True)
         labels = labels.float().to(DEVICE)
         optimizer.zero_grad()
-        logits = model(videos)
+        logits = model_forward(model, videos)
         loss   = criterion(logits, labels)
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
@@ -181,7 +208,7 @@ def evaluate(model, loader, criterion, desc="Val"):
                                 unit="batch", leave=False):
         videos   = videos.to(DEVICE, non_blocking=True)
         labels_f = labels.float().to(DEVICE)
-        logits   = model(videos)
+        logits   = model_forward(model, videos)
         loss     = criterion(logits, labels_f)
         probs    = torch.sigmoid(logits)
         total_loss += loss.item()
@@ -192,39 +219,24 @@ def evaluate(model, loader, criterion, desc="Val"):
     return m, all_labels, all_probs
 
 
-def build_dataloader(root, split_file, split, batch_size, img_size, augment):
-    """DataLoader với img_size tuỳ chỉnh theo model."""
-    ds = RWF2000Dataset(
-        root=root, split_file=split_file,
-        split=split, img_size=img_size, augment=augment,
-    )
-    return DataLoader(ds, batch_size=batch_size,
-                      shuffle=(split=="train"),
-                      num_workers=4, pin_memory=True)
-
-
-def train_model(model, cfg, train_loader, val_loader,
-                epochs, name, ckpt_dir):
+def train_model(model, train_loader, val_loader, epochs, lr, name, ckpt_dir):
     criterion = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.AdamW(
-        model.param_groups(cfg["lr_backbone"], cfg["lr_head"]),
-        weight_decay=1e-4,
-    )
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
-        optimizer, T_max=epochs, eta_min=cfg["lr_backbone"] * 0.01)
+        model.parameters(), lr=lr, weight_decay=1e-4)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, mode="max", factor=0.5, patience=3)
 
     best_f1, best_state = 0.0, None
-    print(f"\n  {'='*65}")
-    print(f"  {name} | {cfg['paper']}")
-    print(f"  {cfg['desc']}")
-    print(f"  LR backbone={cfg['lr_backbone']} head={cfg['lr_head']} | batch={train_loader.batch_size}")
-    print(f"  {'='*65}")
+    print(f"\n  {'='*60}")
+    print(f"  {name} | LR={lr} | batch={train_loader.batch_size} | BCEWithLogitsLoss")
+    print(f"  {'='*60}")
 
     for epoch in range(1, epochs + 1):
         t0 = time.time()
-        train_m = train_epoch(model, train_loader, optimizer, criterion, name, epoch)
+        train_m = train_epoch(model, train_loader, optimizer,
+                              criterion, name, epoch)
         val_m, _, _ = evaluate(model, val_loader, criterion, "Val")
-        scheduler.step()
+        scheduler.step(val_m["f1"])
         elapsed = time.time() - t0
 
         print(f"  [{name}] E{epoch:02d}/{epochs} ({elapsed/60:.1f}min) "
@@ -245,14 +257,14 @@ def train_model(model, cfg, train_loader, val_loader,
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# 5. Extract p_base
+# 4. Extract p_base
 # ═══════════════════════════════════════════════════════════════════════════
 
 class AllSamplesDS(torch.utils.data.Dataset):
-    def __init__(self, root, split_file, img_size=224):
+    def __init__(self, root, split_file, n_frames=16, img_size=224):
         import cv2
         self.root = Path(root)
-        self.n_frames = 16
+        self.n_frames = n_frames
         self.img_size = img_size
         with open(split_file) as f:
             data = json.load(f)
@@ -285,8 +297,8 @@ class AllSamplesDS(torch.utils.data.Dataset):
             frames.append(f)
         cap.release()
         if not frames:
-            frames = [np.zeros((self.img_size, self.img_size, 3), np.uint8)
-                      ] * self.n_frames
+            frames = [np.zeros((self.img_size, self.img_size, 3),
+                      np.uint8)] * self.n_frames
         t = torch.from_numpy(
             np.stack(frames).astype(np.float32) / 255.0
         ).permute(3, 0, 1, 2)
@@ -295,35 +307,38 @@ class AllSamplesDS(torch.utils.data.Dataset):
 
 
 @torch.no_grad()
-def extract_p_base(model, root, split_file, batch_size, img_size):
+def extract_p_base(model, root, split_file, batch_size=8):
     model.eval()
-    ds = AllSamplesDS(root, split_file, img_size=img_size)
+    ds = AllSamplesDS(root, split_file)
     loader = DataLoader(ds, batch_size=batch_size, shuffle=False,
                         num_workers=4, pin_memory=True)
     all_probs, all_labels = [], []
     for videos, labels in tqdm(loader, desc="  [extract p_base]"):
         videos = videos.to(DEVICE, non_blocking=True)
-        probs  = torch.sigmoid(model(videos))
+        probs  = torch.sigmoid(model_forward(model, videos))
         all_probs.extend(probs.cpu().numpy())
         all_labels.extend(labels.numpy())
     return (
-        np.array(all_probs,   dtype=np.float32),
-        np.array(all_labels,  dtype=np.int32),
+        np.array(all_probs,    dtype=np.float32),
+        np.array(all_labels,   dtype=np.int32),
         np.array(ds.split_ids, dtype=np.int32),
     )
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# 6. Context Gating Module (same as Phase 4)
+# 5. Context Gating Module
 # ═══════════════════════════════════════════════════════════════════════════
 
 class CGM(nn.Module):
     def __init__(self, dim=13):
         super().__init__()
-        self.gate = nn.Sequential(nn.Linear(dim,32), nn.ReLU(),
-                                  nn.Dropout(0.3), nn.Linear(32,1), nn.Sigmoid())
-        self.ctx  = nn.Sequential(nn.Linear(dim,32), nn.ReLU(),
-                                  nn.Dropout(0.3), nn.Linear(32,1), nn.Sigmoid())
+        self.gate = nn.Sequential(
+            nn.Linear(dim, 32), nn.ReLU(), nn.Dropout(0.3),
+            nn.Linear(32, 1),   nn.Sigmoid())
+        self.ctx = nn.Sequential(
+            nn.Linear(dim, 32), nn.ReLU(), nn.Dropout(0.3),
+            nn.Linear(32, 1),   nn.Sigmoid())
+
     def forward(self, x, pb):
         a = self.gate(x).squeeze(1)
         c = self.ctx(x).squeeze(1)
@@ -334,15 +349,13 @@ def train_cgm(p_base_all, labels_all, splits_all, cache_dir, name):
     z_c = np.load(cache_dir / "z_crowd.npy")
     z_l = np.load(cache_dir / "z_light.npy")
     z_m = np.load(cache_dir / "z_motion.npy")
-    X   = np.concatenate([p_base_all.reshape(-1,1), z_c, z_l, z_m], axis=1)
+    X   = np.concatenate([p_base_all.reshape(-1, 1), z_c, z_l, z_m], axis=1)
 
-    tr, va, te = splits_all==0, splits_all==1, splits_all==2
+    tr, va, te = splits_all == 0, splits_all == 1, splits_all == 2
     sc = StandardScaler(); sc.fit(X[tr])
     X  = sc.transform(X).astype(np.float32)
 
-    def _t(a, fl=True):
-        return torch.tensor(a.astype(np.float32) if fl else a).to(DEVICE)
-
+    def _t(a): return torch.tensor(a.astype(np.float32)).to(DEVICE)
     X_tr, y_tr, pb_tr = _t(X[tr]), _t(labels_all[tr]), _t(p_base_all[tr])
     X_va, y_va, pb_va = _t(X[va]), _t(labels_all[va]), _t(p_base_all[va])
     X_te, y_te, pb_te = _t(X[te]), _t(labels_all[te]), _t(p_base_all[te])
@@ -362,9 +375,8 @@ def train_cgm(p_base_all, labels_all, splits_all, cache_dir, name):
             pf_v, _, _ = cgm(X_va, pb_va)
         vm = compute_metrics(y_va.cpu().tolist(), pf_v.cpu().tolist())
         if vm["f1"] > best_f1:
-            best_f1 = vm["f1"]
+            best_f1 = vm["f1"]; pat = 0
             best_st = {k: v.clone() for k, v in cgm.state_dict().items()}
-            pat = 0
         else:
             pat += 1
         if pat >= 30: break
@@ -374,8 +386,8 @@ def train_cgm(p_base_all, labels_all, splits_all, cache_dir, name):
         pf_te, alpha_te, _ = cgm(X_te, pb_te)
     tm = compute_metrics(y_te.cpu().tolist(), pf_te.cpu().tolist())
     tm["alpha_mean"]    = round(float(alpha_te.mean()), 4)
-    tm["alpha_violent"] = round(float(alpha_te[y_te.cpu()==1].mean()), 4)
-    tm["alpha_normal"]  = round(float(alpha_te[y_te.cpu()==0].mean()), 4)
+    tm["alpha_violent"] = round(float(alpha_te[y_te.cpu() == 1].mean()), 4)
+    tm["alpha_normal"]  = round(float(alpha_te[y_te.cpu() == 0].mean()), 4)
     print(f"  [{name}+CGM] Acc:{tm['accuracy']:.4f} F1:{tm['f1']:.4f} "
           f"FPR:{tm['fpr']:.4f} FNR:{tm['fnr']:.4f} "
           f"α:{tm['alpha_mean']:.3f}")
@@ -383,7 +395,7 @@ def train_cgm(p_base_all, labels_all, splits_all, cache_dir, name):
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# 7. Main
+# 6. Main
 # ═══════════════════════════════════════════════════════════════════════════
 
 def main(args):
@@ -397,44 +409,47 @@ def main(args):
         name = cfg["name"]
         print(f"\n\n  {'#'*65}")
         print(f"  ## {name} — {cfg['paper']}")
+        print(f"  ## {cfg['desc']}")
         print(f"  {'#'*65}")
 
-        # DataLoaders với img_size riêng của từng model
-        img_size = cfg["img_size"]
-        print(f"\n  Loading datasets (img_size={img_size})...")
-        train_loader = build_dataloader(args.root, args.split, "train",
-                                        args.batch_size, img_size, True)
-        val_loader   = build_dataloader(args.root, args.split, "val",
-                                        args.batch_size, img_size, False)
-        test_loader  = build_dataloader(args.root, args.split, "test",
-                                        args.batch_size, img_size, False)
-
         # Build model
-        model = VideoClassifier(cfg["backbone"], cfg["feat_dim"]).to(DEVICE)
+        model = cfg["builder"]().to(DEVICE)
         total = sum(p.numel() for p in model.parameters())
         print(f"  Total params: {total/1e6:.1f}M")
 
-        # Train
-        model = train_model(model, cfg, train_loader, val_loader,
-                            args.epochs, name, ckpt_dir)
+        # DataLoaders
+        print("\n  Loading datasets...")
+        train_ds = RWF2000Dataset(args.root, args.split, "train", augment=True)
+        val_ds   = RWF2000Dataset(args.root, args.split, "val",   augment=False)
+        test_ds  = RWF2000Dataset(args.root, args.split, "test",  augment=False)
+        train_loader = DataLoader(train_ds, batch_size=args.batch_size,
+                                  shuffle=True,  num_workers=4, pin_memory=True)
+        val_loader   = DataLoader(val_ds,   batch_size=args.batch_size,
+                                  shuffle=False, num_workers=4, pin_memory=True)
+        test_loader  = DataLoader(test_ds,  batch_size=args.batch_size,
+                                  shuffle=False, num_workers=4, pin_memory=True)
 
-        # Test baseline
+        # Train
+        model = train_model(model, train_loader, val_loader,
+                            args.epochs, cfg["lr"], name, ckpt_dir)
+
+        # Baseline test
         criterion = nn.BCEWithLogitsLoss()
         test_m, _, _ = evaluate(model, test_loader, criterion, f"{name}-Test")
-        print(f"\n  [{name}] BASELINE: "
-              f"Acc:{test_m['accuracy']:.4f} F1:{test_m['f1']:.4f} "
-              f"FPR:{test_m['fpr']:.4f} FNR:{test_m['fnr']:.4f}")
+        print(f"\n  [{name}] BASELINE: Acc:{test_m['accuracy']:.4f} "
+              f"F1:{test_m['f1']:.4f} FPR:{test_m['fpr']:.4f} "
+              f"FNR:{test_m['fnr']:.4f}")
 
         # Extract p_base
         print(f"\n  [{name}] Extracting p_base for 1989 clips...")
         p_base, labels_all, splits_all = extract_p_base(
-            model, args.root, args.split, args.batch_size, img_size)
-        np.save(cache_dir / f"p_base_{name.lower().replace('-','_')}.npy", p_base)
-
-        vio  = p_base[labels_all==1].mean()
-        norm = p_base[labels_all==0].mean()
-        print(f"  p_base gap: violent={vio:.4f}, normal={norm:.4f} "
-              f"(gap={vio-norm:.4f})")
+            model, args.root, args.split, args.batch_size)
+        np.save(cache_dir / f"p_base_{name.lower().replace('-','_')}.npy",
+                p_base)
+        vio  = p_base[labels_all == 1].mean()
+        norm = p_base[labels_all == 0].mean()
+        print(f"  p_base: violent={vio:.4f} normal={norm:.4f} "
+              f"gap={vio-norm:.4f}")
 
         # Train CGM
         print(f"\n  [{name}] Training CGM (962 params)...")
@@ -446,11 +461,10 @@ def main(args):
         rel   = (delta / fpr_b * 100) if fpr_b > 0 else 0
 
         print(f"\n  [{name}] FPR: {fpr_b:.4f} → {fpr_c:.4f} "
-              f"(Δ={delta:.4f}, {rel:.1f}% relative)")
+              f"(Δ={delta:.4f}, {rel:.1f}%)")
 
         all_results.append({
             "model": name, "paper": cfg["paper"],
-            "desc":  cfg["desc"],
             "baseline": test_m, "with_cgm": cgm_m,
             "fpr_delta": round(delta, 4),
             "fpr_rel_pct": round(rel, 1),
@@ -458,7 +472,7 @@ def main(args):
 
         del model; torch.cuda.empty_cache()
 
-    # Load X3D-S results from Phase 2/4
+    # Load X3D-S from Phase 2/4
     e0_p  = results_dir / "E0_baseline.json"
     abl_p = results_dir / "ablation_results.json"
     if e0_p.exists() and abl_p.exists():
@@ -471,55 +485,43 @@ def main(args):
             all_results.append({
                 "model": "X3D-S",
                 "paper": "Fan et al., CVPR 2020",
-                "desc":  "X3D — efficient 3D CNN expansion",
                 "baseline": e0, "with_cgm": e4,
                 "fpr_delta": round(fb - fc, 4),
                 "fpr_rel_pct": round((fb-fc)/fb*100, 1) if fb > 0 else 0,
             })
 
-    # Final comparison table
+    # Final table
     print(f"\n\n  {'='*80}")
     print(f"  FINAL — MODEL-AGNOSTIC PROOF")
     print(f"  {'='*80}")
-    print(f"  {'Model':<20} {'Paper':<22} {'FPR':>6}  →  {'FPR+CGM':>7} "
-          f"{'ΔFPR':>7} {'Rel%':>7} {'✓':>4}")
+    print(f"  {'Model':<16} {'Paper':<28} {'FPR':>6} → {'FPR+CGM':>7} "
+          f"{'ΔFPR':>7} {'Rel%':>7} {'OK':>4}")
     print(f"  {'─'*80}")
-
-    confirmed = 0
+    ok_count = 0
     for r in all_results:
         b, c = r["baseline"], r["with_cgm"]
         ok = r["fpr_delta"] > 0
-        if ok: confirmed += 1
-        mark = "✓" if ok else "✗"
-        print(f"  {r['model']:<20} {r['paper']:<22} "
-              f"{b.get('fpr','?'):>6}  →  "
-              f"{c.get('fpr','?'):>7} "
-              f"{r['fpr_delta']:>+7.4f} "
-              f"{r['fpr_rel_pct']:>6.1f}% "
-              f"{mark:>4}")
+        if ok: ok_count += 1
+        print(f"  {r['model']:<16} {r['paper']:<28} "
+              f"{b.get('fpr','?'):>6} → {c.get('fpr','?'):>7} "
+              f"{r['fpr_delta']:>+7.4f} {r['fpr_rel_pct']:>6.1f}% "
+              f"{'✓' if ok else '✗':>4}")
+    print(f"\n  CGM confirmed: {ok_count}/{len(all_results)} models")
 
-    print(f"  {'─'*80}")
-    print(f"\n  CGM confirmed on {confirmed}/{len(all_results)} models "
-          f"→ Model-agnostic: "
-          f"{'CONFIRMED' if confirmed == len(all_results) else 'PARTIAL'}")
-
-    # Save
     with open(results_dir / "phase5_results.json", "w") as f:
         json.dump(all_results, f, indent=2, default=str)
     with open(results_dir / "phase5_table.csv", "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["Model","Paper","Acc_base","F1_base","FPR_base",
-                     "Acc_CGM","F1_CGM","FPR_CGM","ΔFPR","Rel%"])
+        w.writerow(["Model","Paper","Acc_b","F1_b","FPR_b",
+                     "Acc_c","F1_c","FPR_c","ΔFPR","Rel%"])
         for r in all_results:
             b, c = r["baseline"], r["with_cgm"]
             w.writerow([r["model"], r["paper"],
                 b.get("accuracy",""), b.get("f1",""), b.get("fpr",""),
                 c.get("accuracy",""), c.get("f1",""), c.get("fpr",""),
                 r["fpr_delta"], r["fpr_rel_pct"]])
-
-    print(f"\n  Saved → results/phase5_results.json")
-    print(f"  Saved → results/phase5_table.csv")
-    print(f"  Phase 5 DONE.\n")
+    print(f"  Saved → results/phase5_results.json")
+    print(f"  Saved → results/phase5_table.csv\n")
 
 
 if __name__ == "__main__":
@@ -527,6 +529,6 @@ if __name__ == "__main__":
     parser.add_argument("--root",       type=str, required=True)
     parser.add_argument("--split",      type=str, required=True)
     parser.add_argument("--epochs",     type=int,   default=20)
-    parser.add_argument("--batch_size", type=int,   default=4)
+    parser.add_argument("--batch_size", type=int,   default=8)
     args = parser.parse_args()
     main(args)
