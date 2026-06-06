@@ -66,12 +66,15 @@ def main(args):
         sys.exit(1)
 
     total, fixed, missing, ambig = 0, 0, [], 0
+    missing_per_split = {}
     for split_name in ["train", "val", "test"]:
         if split_name not in data:
             continue
+        miss = 0
         for item in data[split_name]:
             total += 1
             norm = item["path"].replace("\\", "/")
+            new = None
             # (1) khớp CHÍNH theo đường dẫn đầy đủ (an toàn với tên trùng)
             if norm.lower() in by_rel:
                 new = by_rel[norm.lower()]
@@ -81,17 +84,26 @@ def main(args):
                 cand = by_name.get(bn, [])
                 if len(cand) == 1:
                     new = cand[0]
-                else:
-                    if len(cand) > 1:
-                        ambig += 1
-                    missing.append(item["path"])
-                    continue
+                elif len(cand) > 1:
+                    ambig += 1
+            if new is None:
+                missing.append(item["path"]); miss += 1
+                continue  # GIỮ NGUYÊN path cũ -> phase8/8b sẽ fallback khung đen,
+                          # bảo toàn căn chỉnh 1989 dòng với cache.
             if new != item["path"]:
                 fixed += 1
             item["path"] = new
+        missing_per_split[split_name] = miss
 
     print(f"\n  Tổng entry: {total} | sửa đường dẫn: {fixed} | "
           f"KHÔNG khớp: {len(missing)}" + (f" (trong đó {ambig} do tên trùng)" if ambig else ""))
+    print(f"  Không khớp theo split: " +
+          ", ".join(f"{k}={v}" for k, v in missing_per_split.items()))
+    if missing_per_split.get("val", 0) or missing_per_split.get("test", 0):
+        print("  [LƯU Ý] có clip hỏng nằm trong val/test -> ảnh hưởng đánh giá. "
+              "Báo lại để xử lý riêng.")
+    else:
+        print("  [OK] toàn bộ clip hỏng đều ở TRAIN -> không ảnh hưởng val/test.")
     if missing:
         print("  [CẢNH BÁO] một số clip không tìm thấy (in tối đa 10):")
         for m in missing[:10]:

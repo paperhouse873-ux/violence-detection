@@ -89,6 +89,12 @@ class RWF2000Dataset(Dataset):
         else:
             frames_raw = None
 
+        # File không đọc được (hỏng tên / thiếu / lỗi codec) -> trả khung đen
+        # thay vì crash. Giữ pipeline chạy thông và bảo toàn căn chỉnh dataset.
+        if total <= 0:
+            return np.zeros((self.n_frames, self.img_size, self.img_size, 3),
+                            dtype=np.uint8)
+
         # Tính indices cần đọc
         if total >= self.n_frames:
             indices = np.linspace(0, total - 1, self.n_frames, dtype=int)
