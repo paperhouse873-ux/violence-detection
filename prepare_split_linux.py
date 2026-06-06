@@ -34,17 +34,19 @@ VIDEO_EXTS = {".avi", ".mp4", ".mov", ".mkv"}
 
 
 def build_index(root: Path):
-    """{ten_file.lower(): duong_dan_tuong_doi_voi_root}. Cảnh báo nếu trùng tên."""
-    index, dups = {}, 0
+    """Hai chỉ mục, key đều lowercase + dùng '/':
+       by_rel  : {duong_dan_tuong_doi.lower(): duong_dan_that}  (CHÍNH, an toàn)
+       by_name : {ten_file.lower(): [duong_dan_that, ...]}      (dự phòng)
+    RWF-2000 có ~257 tên file trùng giữa các split -> PHẢI khớp theo đường dẫn
+    đầy đủ để không gán nhầm clip sang sai split/lớp."""
+    by_rel, by_name = {}, {}
     for dirpath, _, files in os.walk(root):
         for fn in files:
             if Path(fn).suffix.lower() in VIDEO_EXTS:
-                key = fn.lower()
                 rel = os.path.relpath(os.path.join(dirpath, fn), root).replace("\\", "/")
-                if key in index:
-                    dups += 1
-                index[key] = rel
-    return index, dups
+                by_rel[rel.lower()] = rel
+                by_name.setdefault(fn.lower(), []).append(rel)
+    return by_rel, by_name
 
 
 def main(args):
@@ -57,29 +59,39 @@ def main(args):
         data = json.load(f)
 
     print(f"  Quét video dưới: {root.resolve()}")
-    index, dups = build_index(root)
-    print(f"  Tìm thấy {len(index)} file video" + (f"  (CẢNH BÁO: {dups} tên trùng)" if dups else ""))
-    if len(index) == 0:
+    by_rel, by_name = build_index(root)
+    print(f"  Tìm thấy {len(by_rel)} file video")
+    if len(by_rel) == 0:
         print("  [LỖI] Không thấy file video nào. Kiểm tra lại --root (có thể bị lồng thêm 1 cấp).")
         sys.exit(1)
 
-    total, fixed, missing = 0, 0, []
+    total, fixed, missing, ambig = 0, 0, [], 0
     for split_name in ["train", "val", "test"]:
         if split_name not in data:
             continue
         for item in data[split_name]:
             total += 1
-            orig = item["path"]
-            bn = os.path.basename(orig.replace("\\", "/")).lower()
-            if bn in index:
-                new = index[bn]
-                if new != item["path"]:
-                    fixed += 1
-                item["path"] = new
+            norm = item["path"].replace("\\", "/")
+            # (1) khớp CHÍNH theo đường dẫn đầy đủ (an toàn với tên trùng)
+            if norm.lower() in by_rel:
+                new = by_rel[norm.lower()]
             else:
-                missing.append(orig)
+                # (2) dự phòng theo tên file — CHỈ khi tên đó là duy nhất
+                bn = os.path.basename(norm).lower()
+                cand = by_name.get(bn, [])
+                if len(cand) == 1:
+                    new = cand[0]
+                else:
+                    if len(cand) > 1:
+                        ambig += 1
+                    missing.append(item["path"])
+                    continue
+            if new != item["path"]:
+                fixed += 1
+            item["path"] = new
 
-    print(f"\n  Tổng entry: {total} | sửa đường dẫn: {fixed} | KHÔNG khớp: {len(missing)}")
+    print(f"\n  Tổng entry: {total} | sửa đường dẫn: {fixed} | "
+          f"KHÔNG khớp: {len(missing)}" + (f" (trong đó {ambig} do tên trùng)" if ambig else ""))
     if missing:
         print("  [CẢNH BÁO] một số clip không tìm thấy (in tối đa 10):")
         for m in missing[:10]:
