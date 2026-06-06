@@ -1,19 +1,13 @@
-"""
-Phase 0 — Step 1: Kiểm tra cấu trúc thư mục RWF-2000
-======================================================
-Chạy: python phase0_step1_check_structure.py --root /path/to/RWF-2000
-"""
-
 import os
 import argparse
 from pathlib import Path
 
-# ── Cấu trúc RWF-2000 đúng chuẩn ──────────────────────────────────────────
+
 EXPECTED = {
-    "train/fight":    1000,  # 1000 clip violent
-    "train/nonFight": 1000,  # 1000 clip non-violent
-    "val/fight":      200,   # 200 clip violent
-    "val/nonFight":   200,   # 200 clip non-violent
+    "train/fight":    1000,  
+    "train/nonFight": 1000,  
+    "val/fight":      200,   
+    "val/nonFight":   200,   
 }
 VIDEO_EXTS = {".avi", ".mp4", ".mov", ".mkv"}
 
@@ -36,7 +30,7 @@ def check_structure(root: Path):
             all_ok = False
             continue
 
-        # Đếm file video
+        
         files = [f for f in folder.iterdir()
                  if f.suffix.lower() in VIDEO_EXTS]
         n = len(files)

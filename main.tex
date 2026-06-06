@@ -1,0 +1,207 @@
+%% Springer Nature LaTeX template — sn-jnl (v3.1, December 2024)
+%% Compile: pdflatex → bibtex → pdflatex → pdflatex
+
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+%% ─── Packages ───────────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{microtype}
+\hypersetup{
+    colorlinks=true,
+    citecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%% ─── Title ──────────────────────────────────────────────────────────────────
+\title[Context-Aware False Alarm Reduction for Violence Detection]{%
+  Context-Aware False Alarm Reduction for Violence Detection
+  in Surveillance Videos Using a Lightweight Gating Module}
+
+%% ─── Authors ────────────────────────────────────────────────────────────────
+\author*[1]{\fnm{Viet Hung} \sur{Ha}\orcidA{}}\email{hungha.060963@gmail.com}
+\author[1]{\fnm{Viet Nhan} \sur{Nguyen}\orcidB{}}\email{nhannvse201082@fpt.edu.vn}
+\author[1]{\fnm{Thai Kiet} \sur{Nguyen}\orcidC{}}\email{kietntse200734@fpt.edu.vn}
+\author[1]{\fnm{Bao Nguyen} \sur{Tran}\orcidD{}}\email{nguyentbse201012@fpt.edu.vn}
+
+\newcommand{\orcidA}{~\href{https://orcid.org/0009-0005-9924-4498}%
+  {\textcolor{black}{[0009-0005-9924-4498]}}}
+\newcommand{\orcidB}{~\href{https://orcid.org/0009-0007-7770-6449}%
+  {\textcolor{black}{[0009-0007-7770-6449]}}}
+\newcommand{\orcidC}{~\href{https://orcid.org/0009-0004-7609-9622}%
+  {\textcolor{black}{[0009-0004-7609-9622]}}}
+\newcommand{\orcidD}{~\href{https://orcid.org/0009-0006-9895-9827}%
+  {\textcolor{black}{[0009-0006-9895-9827]}}}
+
+\affil*[1]{%
+  \orgname{FPT University},
+  \orgaddress{%
+    \city{Ho Chi Minh City},
+    \country{Vietnam}}}
+
+
+%% ─── Abstract ───────────────────────────────────────────────────────────────
+\abstract{%
+Violence detectors deployed on CCTV surveillance systems suffer from
+unacceptably high false positive rates in contextually ambiguous
+scenes---crowded gatherings, sporting events, or dimly lit
+environments---where vigorous but benign motion closely resembles genuine
+violent incidents. This problem, known as \emph{alert fatigue}, causes
+security operators to ignore repeated erroneous alarms, ultimately
+undermining the system's safety purpose. Most existing deep-learning
+approaches pursue ever-higher classification accuracy by replacing the
+visual backbone, yet they reason solely over appearance and motion cues and
+seldom treat the false positive rate~(FPR) as an explicit design objective.
+We take a complementary, deployment-driven view and ask: given any
+reasonable detector, how can its false alarms be reduced cheaply using
+freely available scene context?
+To this end we propose a lightweight, model-agnostic two-stage framework
+that augments a pre-trained violence detector with a \emph{Context Gating
+Module}~(CGM), suppressing false alarms without retraining the backbone.
+In the first stage, a frozen X3D-S backbone~\cite{fan2020x3d} fine-tuned
+on RWF-2000~\cite{cheng2021rwf} provides an initial violence
+probability~$p_{\text{base}}$. In the second stage, three parallel context
+streams are extracted directly from raw video without any additional
+annotation: crowd density~(YOLOv8n), lighting condition~(OpenCV), and a
+scene-level motion-chaos descriptor capturing direction entropy and motion
+synchrony~(Farneback optical flow). The resulting 13-dimensional context
+vector drives the CGM---two compact MLPs totalling only 962 trainable
+parameters. An MLP-gate produces an interpretable attention
+weight~$\alpha\in[0,1]$ encoding how much the base detector should be
+trusted for a given clip, while an MLP-ctx produces a context-corrected
+probability~$p_{\text{ctx}}$, yielding the calibrated output
+$p_{\text{final}}=\alpha\cdot p_{\text{base}}+(1-\alpha)\cdot p_{\text{ctx}}$.
+On RWF-2000, the CGM reduces the false positive rate from $0.153$ to $0.113$
+---a $26.1\%$ relative reduction---while raising accuracy from
+$85.95\%$ to $87.63\%$ and keeping the false negative rate essentially
+unchanged. A per-stream ablation identifies the lighting stream as the
+strongest single context cue and shows that the full three-stream
+combination outperforms any individual stream, indicating a synergistic
+effect. We further examine whether the framework transfers across
+distributions by evaluating on the RLVS dataset~\cite{soliman2019rlvs}.}
+
+\keywords{Violence detection, False alarm reduction, Context-aware
+  calibration, Gating module, X3D, Surveillance video, Optical flow,
+  Crowd density, Cross-dataset generalization, Lightweight deep learning}
+
+%% ─── Document ───────────────────────────────────────────────────────────────
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+Automated violence detection in CCTV surveillance is a critical component
+of modern public-safety infrastructure. Recent deep-learning approaches
+achieve strong accuracy on standard benchmarks, ranging from efficient
+3D convolutional networks~\cite{fan2020x3d} and two-stream
+designs~\cite{cheng2021rwf} to transformer- and state-space
+architectures~\cite{senadeera2024cuenet,senadeera2025videomamba}.
+Yet a persistent practical problem remains: excessive false positive
+alerts in contextually ambiguous scenes such as crowded gatherings,
+sporting events, or dimly lit environments. Repeated erroneous alarms
+cause \emph{alert fatigue}~\cite{islam2023survey}, eroding operator trust
+and ultimately undermining the system's safety purpose.
+
+The root cause is twofold. First, the dominant research objective is
+\emph{accuracy}, not the false positive rate~(FPR); a detector reporting
+$88\%$ accuracy can still raise an alarm on a large fraction of benign
+clips, which is the metric that actually governs deployment cost. Second,
+existing detectors reason almost exclusively over appearance and motion
+cues and therefore cannot separate vigorous-but-benign crowd activity from
+genuine violence. What distinguishes these situations is environmental
+\emph{context}---how crowded the scene is, how well it is lit, and whether
+motion is spatially coherent (as in coordinated crowd movement or camera
+shake) rather than chaotic.
+
+Prior work leaves this gap open. Backbone-centric
+methods~\cite{senadeera2024cuenet,senadeera2025videomamba,visafe2025}
+improve accuracy and efficiency by redesigning the network, but neither
+target FPR nor exploit scene context. Approaches that do model
+context~\cite{fistfight2025} rely on expensive, annotation-dependent
+pipelines such as pose estimation and tracking. Gating has been shown to be
+an effective fusion primitive~\cite{senadeera2025videomamba}, but the gate
+is embedded \emph{inside} the backbone and trained end to end, so it cannot
+be reused with a different detector. A survey of over 200
+papers~\cite{islam2023survey} confirms that no existing work explicitly
+optimises FPR through lightweight, annotation-free contextual
+post-processing applied on top of a frozen detector.
+
+We address this gap with a lightweight, model-agnostic two-stage framework.
+A frozen X3D-S backbone~\cite{fan2020x3d} fine-tuned on
+RWF-2000~\cite{cheng2021rwf} provides an initial violence
+probability~$p_{\text{base}}$. A \emph{Context Gating Module}~(CGM) of only
+962 parameters then calibrates this probability using three automatically
+extracted context streams---crowd density (YOLOv8n), lighting condition
+(OpenCV), and a scene-level motion-chaos descriptor (Farneback optical
+flow)---producing a final calibrated prediction
+$p_{\text{final}}=\alpha\cdot p_{\text{base}}+(1-\alpha)\cdot p_{\text{ctx}}$
+(Eq.~\ref{eq:gating}). Because the backbone is frozen and the gate is
+external, the module attaches to any probabilistic detector at negligible
+cost.
+
+Our study is organised around three research questions:
+\begin{itemize}
+  \item \textbf{RQ1.} Does augmenting X3D-S with the Context Gating Module
+        reduce the false positive rate compared with X3D-S alone, without
+        increasing the false negative rate?
+  \item \textbf{RQ2.} Which context stream---crowd, lighting, or
+        motion-chaos---contributes most to the reduction in false alarms?
+  \item \textbf{RQ3.} Does the framework generalise across datasets, i.e.\
+        does a CGM trained on RWF-2000 still reduce false alarms when
+        transferred to the RLVS dataset~\cite{soliman2019rlvs}?
+\end{itemize}
+
+\paragraph{Contributions.}
+(i)~A \emph{model-agnostic}, two-stage framework that treats false alarm
+reduction as an explicit objective and requires no retraining of the
+underlying detector.
+(ii)~An \emph{annotation-free} three-stream context extraction pipeline
+(crowd, lighting, motion-chaos) that supplies information complementary to
+the visual backbone.
+(iii)~A compact \emph{Context Gating Module} (962 parameters) whose gating
+weight~$\alpha$ yields an interpretable, per-clip measure of how much the
+base detector is trusted.
+(iv)~A systematic empirical study on RWF-2000---including a per-stream
+ablation and a cross-dataset evaluation on RLVS---that quantifies the FPR
+reduction, identifies lighting as the strongest single context cue, and
+analyses the contribution of the motion-chaos stream.
+
+The paper proceeds as follows: Section~\ref{sec:related} reviews related
+work; Section~\ref{sec:method} details the methodology;
+Sections~\ref{sec:experiments}--\ref{sec:results} present experiments and
+results; Section~\ref{sec:conclusion} concludes.
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Related Work}
+\label{sec:related}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Methodology}
+\label{sec:method}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Experiments}
+\label{sec:experiments}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Results and Discussion}
+\label{sec:results}
+
+%% ════════════════════════════════════════════════════════════════════════════
+\section{Conclusion}
+\label{sec:conclusion}
+
+%% ─── Bibliography ───────────────────────────────────────────────────────────
+%% Note: bibliographystyle is set automatically by the sn-jnl class
+%% (sn-mathphys-num); do not redeclare it here.
+\bibliography{references}
+
+\end{document}

@@ -33,7 +33,7 @@ def load_frozen_x3ds(ckpt_path: str) -> nn.Module:
     if hasattr(model.blocks[-1], "activation"):
         model.blocks[-1].activation = nn.Identity()
 
-    ckpt = torch.load(ckpt_path, map_location=DEVICE)
+    ckpt = torch.load(ckpt_path, map_location=DEVICE, weights_only=False)
     model.load_state_dict(ckpt["model_state_dict"])
     model = model.to(DEVICE)
     model.eval()
